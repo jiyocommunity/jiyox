@@ -370,7 +370,7 @@ bool IsTransactionInChain(uint256 txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
 void RecalculateZRUPXSpent();
 void RecalculateZRUPXMinted();
-bool RecalculateRUPSupply(int nHeightStart);
+bool RecalculateRUPXSupply(int nHeightStart);
 
 
 /**

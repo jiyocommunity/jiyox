@@ -1360,7 +1360,7 @@ bool AppInit2(boost::thread_group& threadGroup)
                         RecalculateZRUPXMinted();
                         RecalculateZRUPXSpent();
                     }
-                    RecalculateRUPSupply(1);
+                    RecalculateRUPXSupply(1);
                 }
 
                 // Force recalculation of accumulators.

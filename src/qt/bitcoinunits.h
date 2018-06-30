@@ -59,8 +59,8 @@ public:
      */
     enum Unit {
         RUPX,
-        mRUP,
-        uRUP
+        mRUPX,
+        uRUPX
     };
 
     enum SeparatorStyle {
