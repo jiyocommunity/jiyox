@@ -1,12 +1,12 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
 
-Rupaya Core *version* is now available from:
+Jiyo Core *version* is now available from:
 
-  <https://github.com/rupaya-project/rupaya/releases>
+  <https://github.com/jiyo-project/jiyo/releases>
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/rupaya-project/rupaya/issues>
+  <https://github.com/jiyo-project/jiyo/issues>
 
 Mandatory Update
 ==============
@@ -14,12 +14,12 @@ Mandatory Update
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Rupaya-Qt (on Mac) or rupayad/rupaya-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Jiyo-Qt (on Mac) or jiyod/jiyo-qt (on Linux).
 
 Compatibility
 ==============
 
-Rupaya Core is extensively tested on multiple operating systems using
+Jiyo Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -27,7 +27,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-Rupaya Core should also work on most other Unix-like systems but is not
+Jiyo Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable Changes

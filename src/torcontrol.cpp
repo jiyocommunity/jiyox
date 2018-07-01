@@ -252,7 +252,7 @@ bool TorControlConnection::Command(const std::string &cmd, const ReplyHandlerCB&
 /* Split reply line in the form 'AUTH METHODS=...' into a type
  * 'AUTH' and arguments 'METHODS=...'.
  * Grammar is implicitly defined in https://spec.torproject.org/control-spec by
- * the server reply formats for PROTOCOLINFO (S3.21) and AUTHCHALLENGE (S3.24).
+ * the server reply formats for PROTOCOLINFO (S3.21) and AUJIYOHALLENGE (S3.24).
  */
 static std::pair<std::string,std::string> SplitTorReplyLine(const std::string &s)
 {
@@ -270,7 +270,7 @@ static std::pair<std::string,std::string> SplitTorReplyLine(const std::string &s
 /** Parse reply arguments in the form 'METHODS=COOKIE,SAFECOOKIE COOKIEFILE=".../control_auth_cookie"'.
  * Returns a map of keys to values, or an empty map if there was an error.
  * Grammar is implicitly defined in https://spec.torproject.org/control-spec by
- * the server reply formats for PROTOCOLINFO (S3.21), AUTHCHALLENGE (S3.24),
+ * the server reply formats for PROTOCOLINFO (S3.21), AUJIYOHALLENGE (S3.24),
  * and ADD_ONION (S3.27). See also sections 2.1 and 2.3.
  */
 static std::map<std::string,std::string> ParseTorReplyMapping(const std::string &s)
@@ -439,7 +439,7 @@ private:
     void add_onion_cb(TorControlConnection& conn, const TorControlReply& reply);
     /** Callback for AUTHENTICATE result */
     void auth_cb(TorControlConnection& conn, const TorControlReply& reply);
-    /** Callback for AUTHCHALLENGE result */
+    /** Callback for AUJIYOHALLENGE result */
     void authchallenge_cb(TorControlConnection& conn, const TorControlReply& reply);
     /** Callback for PROTOCOLINFO result */
     void protocolinfo_cb(TorControlConnection& conn, const TorControlReply& reply);
@@ -554,7 +554,7 @@ void TorController::auth_cb(TorControlConnection& _conn, const TorControlReply& 
  *                  CookieString | ClientNonce | ServerNonce)
  *    (with the HMAC key as its first argument)
  *
- *    After a controller sends a successful AUTHCHALLENGE command, the
+ *    After a controller sends a successful AUJIYOHALLENGE command, the
  *    next command sent on the connection must be an AUTHENTICATE command,
  *    and the only authentication string which that AUTHENTICATE command
  *    will accept is:
@@ -579,15 +579,15 @@ void TorController::authchallenge_cb(TorControlConnection& _conn, const TorContr
     if (reply.code == 250) {
         LogPrint("tor", "tor: SAFECOOKIE authentication challenge successful\n");
         std::pair<std::string,std::string> l = SplitTorReplyLine(reply.lines[0]);
-        if (l.first == "AUTHCHALLENGE") {
+        if (l.first == "AUJIYOHALLENGE") {
             std::map<std::string,std::string> m = ParseTorReplyMapping(l.second);
             if (m.empty()) {
-                LogPrintf("tor: Error parsing AUTHCHALLENGE parameters: %s\n", SanitizeString(l.second));
+                LogPrintf("tor: Error parsing AUJIYOHALLENGE parameters: %s\n", SanitizeString(l.second));
                 return;
             }
             std::vector<uint8_t> serverHash = ParseHex(m["SERVERHASH"]);
             std::vector<uint8_t> serverNonce = ParseHex(m["SERVERNONCE"]);
-            LogPrint("tor", "tor: AUTHCHALLENGE ServerHash %s ServerNonce %s\n", HexStr(serverHash), HexStr(serverNonce));
+            LogPrint("tor", "tor: AUJIYOHALLENGE ServerHash %s ServerNonce %s\n", HexStr(serverHash), HexStr(serverNonce));
             if (serverNonce.size() != 32) {
                 LogPrintf("tor: ServerNonce is not 32 bytes, as required by spec\n");
                 return;
@@ -602,7 +602,7 @@ void TorController::authchallenge_cb(TorControlConnection& _conn, const TorContr
             std::vector<uint8_t> computedClientHash = ComputeResponse(TOR_SAFE_CLIENTKEY, cookie, clientNonce, serverNonce);
             _conn.Command("AUTHENTICATE " + HexStr(computedClientHash), boost::bind(&TorController::auth_cb, this, _1, _2));
         } else {
-            LogPrintf("tor: Invalid reply to AUTHCHALLENGE\n");
+            LogPrintf("tor: Invalid reply to AUJIYOHALLENGE\n");
         }
     } else {
         LogPrintf("tor: SAFECOOKIE authentication challenge failed\n");
@@ -665,7 +665,7 @@ void TorController::protocolinfo_cb(TorControlConnection& _conn, const TorContro
                 cookie = std::vector<uint8_t>(status_cookie.second.begin(), status_cookie.second.end());
                 clientNonce = std::vector<uint8_t>(TOR_NONCE_SIZE, 0);
                 GetRandBytes(&clientNonce[0], TOR_NONCE_SIZE);
-                _conn.Command("AUTHCHALLENGE SAFECOOKIE " + HexStr(clientNonce), boost::bind(&TorController::authchallenge_cb, this, _1, _2));
+                _conn.Command("AUJIYOHALLENGE SAFECOOKIE " + HexStr(clientNonce), boost::bind(&TorController::authchallenge_cb, this, _1, _2));
             } else {
                 if (status_cookie.first) {
                     LogPrintf("tor: Authentication cookie %s is not exactly %i bytes, as is required by the spec\n", cookiefile, TOR_COOKIE_SIZE);

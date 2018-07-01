@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start Rupaya after logging in to the system.</string>
+          <string>Automatically start Jiyo after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start Rupaya on system login</string>
+          <string>&amp;Start Jiyo on system login</string>
          </property>
         </widget>
        </item>
@@ -135,10 +135,10 @@
          <item>
           <widget class="QLabel" name="percentage_label">
            <property name="toolTip">
-            <string>Percentage of incoming RUPX which get automatically converted to zRUPX via Zerocoin Protocol (min: 10%)</string>
+            <string>Percentage of incoming JIYO which get automatically converted to zJIYO via Zerocoin Protocol (min: 10%)</string>
            </property>
            <property name="text">
-            <string>Percentage of autominted zRUPX</string>
+            <string>Percentage of autominted zJIYO</string>
            </property>
           </widget>
          </item>
@@ -168,10 +168,10 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough RUPX for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough JIYO for this denomination is available</string>
            </property>
            <property name="text">
-            <string>Preferred Automint zRUPX Denomination</string>
+            <string>Preferred Automint zJIYO Denomination</string>
            </property>
           </widget>
          </item>
@@ -184,7 +184,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough RUPX for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough JIYO for this denomination is available</string>
            </property>
            <property name="maxVisibleItems">
             <number>9</number>
@@ -265,7 +265,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the Rupaya client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the Jiyo client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -285,7 +285,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the Rupaya network through a SOCKS5 proxy.</string>
+          <string>Connect to the Jiyo network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -451,7 +451,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting Rupaya.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting Jiyo.</string>
            </property>
           </widget>
          </item>
@@ -473,7 +473,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/rupaya-project/rupaya-project-translations</string>
+https://www.transifex.com/jiyo-project/jiyo-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

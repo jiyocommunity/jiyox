@@ -1,39 +1,39 @@
-Rupaya Core
+Jiyo Core
 =====================
 
 Setup
 ---------------------
-[Rupaya Core](https://github.com/rupaya-project/rupaya) is the original Rupaya client and it builds the backbone of the network. However, it downloads and stores the entire history of Rupaya transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Jiyo Core](https://github.com/jiyo-project/jiyo) is the original Jiyo client and it builds the backbone of the network. However, it downloads and stores the entire history of Jiyo transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Rupaya on your native platform.
+The following are some helpful notes on how to run Jiyo on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/rupaya-qt (GUI, 32-bit) or bin/32/rupayad (headless, 32-bit)
-- bin/64/rupaya-qt (GUI, 64-bit) or bin/64/rupayad (headless, 64-bit)
+- bin/32/jiyo-qt (GUI, 32-bit) or bin/32/jiyod (headless, 32-bit)
+- bin/64/jiyo-qt (GUI, 64-bit) or bin/64/jiyod (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run rupaya-qt.exe.
+Unpack the files into a directory, and then run jiyo-qt.exe.
 
 ### OSX
 
-Drag Rupaya-Qt to your applications folder, and then run Rupaya-Qt.
+Drag Jiyo-Qt to your applications folder, and then run Jiyo-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Rupaya Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Jiyo Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0).
-* Join one of our Discord groups [Rupaya Discord Groups](https://discord.gg/8tbvMQM).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=506320.0).
+* Join one of our Discord groups [Jiyo Discord Groups](https://discord.gg/8tbvMQM).
 
 Building
 ---------------------
-The following are developer notes on how to build Rupaya on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Jiyo on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build Rupaya on your native platform
 
 Development
 ---------------------
-The Rupaya repo's [root README](https://github.com/rupaya-project/rupaya/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Jiyo repo's [root README](https://github.com/jiyo-project/jiyo/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -55,8 +55,9 @@ The Rupaya repo's [root README](https://github.com/rupaya-project/rupaya/blob/ma
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0) .
-* Join the [Rupaya Discord Group](https://discord.gg/8tbvMQM).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=506320.0) .
+* Join the [Jiyo Discord Group](https://discord.gg/VStxaRy).
+* Join the [Jiyo Telegram Group](https://t.me/HempCoinOfficial).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

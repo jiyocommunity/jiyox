@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build rupayad (headless client) for OSX.
+This guide will show you how to build jiyod (headless client) for OSX.
 
 Notes
 -----
@@ -40,14 +40,14 @@ Instructions: Homebrew
 
         brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 libzmq
 
-### Building `rupayad`
+### Building `jiyod`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/rupaya-project/rupaya.git
-        cd Rupaya
+        git clone https://github.com/jiyo-project/jiyo.git
+        cd Jiyo
 
-2.  Build rupayad:
+2.  Build jiyod:
 
         ./autogen.sh
         ./configure --with-gui=qt5
@@ -57,7 +57,7 @@ Instructions: Homebrew
 
         make check
 
-4.  (Optional) You can also install rupayad to your path:
+4.  (Optional) You can also install jiyod to your path:
 
         make install
 
@@ -119,7 +119,7 @@ Select the **Qt version** and click **Ok**.
 
 ![](img/build-osx/qt-version.png)
 
-Set the **Build directory** path to the `root` of the clone Rupaya project. Qt Creator needs this to locate the `Makefile`.
+Set the **Build directory** path to the `root` of the clone Jiyo project. Qt Creator needs this to locate the `Makefile`.
 
 ![](img/build-osx/qt-sidebar-project.png)
 
@@ -131,7 +131,7 @@ To debug using `testnet`, set `-testnet` as the value of **Command line argument
 
 ![](img/build-osx/qt-run-configuration-testnet.png)
 
-To start debugging, locate the following function in `rupaya.cpp` and set a breakpoint.
+To start debugging, locate the following function in `jiyo.cpp` and set a breakpoint.
 
 ```c++
 #ifndef BITCOIN_QT_TEST
@@ -154,11 +154,11 @@ Your debugger will stop at the break breakpoint you set.
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `rupayad` for your own use.
+You can ignore this section if you are building `jiyod` for your own use.
 
-`rupayad/rupaya-cli` binaries are not included in the `rupaya-Qt.app` bundle.
+`jiyod/jiyo-cli` binaries are not included in the `jiyo-Qt.app` bundle.
 
-If you are building `rupayad` or `rupaya-qt` for others, your build machine should be set up
+If you are building `jiyod` or `jiyo-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -169,30 +169,30 @@ All dependencies should be compiled with these flags:
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
  ```
 
-Once dependencies are compiled, see release-process.md for how the Rupaya-Qt.app
+Once dependencies are compiled, see release-process.md for how the Jiyo-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./rupayad`, provided that you are still in the `src`
+It's now available at `./jiyod`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./rupayad` to get the filename where it should be put, or just try these
+Run `./jiyod` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=rupayarpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Rupaya/rupaya.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Rupaya/rupaya.conf"
+    echo -e "rpcuser=jiyorpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Jiyo/jiyo.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Jiyo/jiyo.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Rupaya/debug.log
+    tail -f $HOME/Library/Application\ Support/Jiyo/debug.log
 
 Other commands:
 -------
 
-    ./rupayad -daemon # to start the rupaya daemon.
-    ./rupaya-cli --help  # for a list of command-line options.
-    ./rupaya-cli help    # When the daemon is running, to get a list of RPC commands
+    ./jiyod -daemon # to start the jiyo daemon.
+    ./jiyo-cli --help  # for a list of command-line options.
+    ./jiyo-cli help    # When the daemon is running, to get a list of RPC commands

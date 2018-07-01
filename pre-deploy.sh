@@ -22,9 +22,9 @@ elif [[ $HOST = "x86_64-apple-darwin11" ]]; then
     ARCHIVE_NAME="osx-x64.zip"
 fi
 
-cp $TRAVIS_BUILD_DIR/src/qt/rupaya-qt $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/qt/rupaya-qt.exe $OUTDIR/bin/ || echo "no QT Wallet"
-cp $TRAVIS_BUILD_DIR/src/rupayad $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/rupayad.exe $OUTDIR/bin/
-cp $TRAVIS_BUILD_DIR/src/rupaya-cli $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/rupaya-cli.exe $OUTDIR/bin/
+cp $TRAVIS_BUILD_DIR/src/qt/jiyo-qt $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/qt/jiyo-qt.exe $OUTDIR/bin/ || echo "no QT Wallet"
+cp $TRAVIS_BUILD_DIR/src/jiyod $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/jiyod.exe $OUTDIR/bin/
+cp $TRAVIS_BUILD_DIR/src/jiyo-cli $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/jiyo-cli.exe $OUTDIR/bin/
 strip "$OUTDIR/bin"/* || echo "nothing to strip"
 ls -lah $OUTDIR/bin
 

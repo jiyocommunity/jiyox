@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Rupaya developers
+// Copyright (c) 2015-2017 The Rupaya developers
+// Copyright (c) 2017-2018 The Jiyo developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -844,8 +844,8 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
     nSubsidy = GetBlockValue(nHeight);
     LogPrint("masternode","CBudgetManager::GetTotalBudget(%d): GetBlockValue(%d) returned %f COINs\n", nHeight, nHeight, nSubsidy / COIN);
 
-    // Define governance budget as 20% of the block value
-    totalBudget = ((nSubsidy / 100) * 20) * GetBudgetPaymentCycleBlocks();
+    // Define governance budget as 10% of the block value
+    totalBudget = ((nSubsidy / 100) * 10) * GetBudgetPaymentCycleBlocks();
 
     LogPrint("masternode","CBudgetManager::GetTotalBudget(%d) returning %f COINs\n", nHeight, totalBudget / COIN);
     return totalBudget;

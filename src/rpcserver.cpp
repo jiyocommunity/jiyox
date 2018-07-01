@@ -1,8 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Rupaya developers
+// Copyright (c) 2015-2017 The Rupaya developers
+// Copyright (c) 2017 The Jiyo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Rupaya server.");
+            "\nStop Jiyo server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Rupaya server stopping";
+    return "Jiyo server stopping";
 }
 
 
@@ -318,36 +318,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Rupaya features */
-        {"rupaya", "masternode", &masternode, true, true, false},
-        {"rupaya", "listmasternodes", &listmasternodes, true, true, false},
-        {"rupaya", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"rupaya", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"rupaya", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"rupaya", "masternodedebug", &masternodedebug, true, true, false},
-        {"rupaya", "startmasternode", &startmasternode, true, true, false},
-        {"rupaya", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"rupaya", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"rupaya", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"rupaya", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"rupaya", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"rupaya", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"rupaya", "mnbudget", &mnbudget, true, true, false},
-        {"rupaya", "preparebudget", &preparebudget, true, true, false},
-        {"rupaya", "submitbudget", &submitbudget, true, true, false},
-        {"rupaya", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"rupaya", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"rupaya", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"rupaya", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"rupaya", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"rupaya", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"rupaya", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"rupaya", "checkbudgets", &checkbudgets, true, true, false},
-        {"rupaya", "mnsync", &mnsync, true, true, false},
-        {"rupaya", "spork", &spork, true, true, false},
-        {"rupaya", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Jiyo features */
+        {"jiyo", "masternode", &masternode, true, true, false},
+        {"jiyo", "listmasternodes", &listmasternodes, true, true, false},
+        {"jiyo", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"jiyo", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"jiyo", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"jiyo", "masternodedebug", &masternodedebug, true, true, false},
+        {"jiyo", "startmasternode", &startmasternode, true, true, false},
+        {"jiyo", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"jiyo", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"jiyo", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"jiyo", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"jiyo", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"jiyo", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"jiyo", "mnbudget", &mnbudget, true, true, false},
+        {"jiyo", "preparebudget", &preparebudget, true, true, false},
+        {"jiyo", "submitbudget", &submitbudget, true, true, false},
+        {"jiyo", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"jiyo", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"jiyo", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"jiyo", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"jiyo", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"jiyo", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"jiyo", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"jiyo", "checkbudgets", &checkbudgets, true, true, false},
+        {"jiyo", "mnsync", &mnsync, true, true, false},
+        {"jiyo", "spork", &spork, true, true, false},
+        {"jiyo", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"rupaya", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"jiyo", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -626,16 +626,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use rupayad, or the -server option to rupaya-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use jiyod, or the -server option to jiyo-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=rupayarpc\n"
+                                               "rpcuser=jiyorpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Rupaya Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"Jiyo Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1086,14 +1086,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> rupaya-cli " + methodname + " " + args + "\n";
+    return "> jiyo-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:7020/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:8888/\n";
 }
 
 const CRPCTable tableRPC;

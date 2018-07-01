@@ -24,11 +24,11 @@ Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
     git clone https://github.com/eastcoastcrypto/gitian.sigs.git
-    git clone https://github.com/eastcoastcrypto/rupaya-detached-sigs.git
+    git clone https://github.com/eastcoastcrypto/jiyo-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/rupaya-project/rupaya.git
+    git clone https://github.com/jiyo-project/jiyo.git
 
-### Rupaya maintainers/release engineers, suggestion for writing release notes
+### Jiyo maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -49,7 +49,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./rupaya
+    pushd ./jiyo
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -83,7 +83,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../rupaya/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../jiyo/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -91,55 +91,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url rupaya=/path/to/rupaya,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url jiyo=/path/to/jiyo,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Rupaya Core for Linux, Windows, and OS X:
+### Build and sign Jiyo Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit rupaya=v${VERSION} ../rupaya/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../rupaya/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/rupaya-*.tar.gz build/out/src/rupaya-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit jiyo=v${VERSION} ../jiyo/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../jiyo/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/jiyo-*.tar.gz build/out/src/jiyo-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit rupaya=v${VERSION} ../rupaya/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../rupaya/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/rupaya-*-win-unsigned.tar.gz inputs/rupaya-win-unsigned.tar.gz
-    mv build/out/rupaya-*.zip build/out/rupaya-*.exe ../
+    ./bin/gbuild --memory 3000 --commit jiyo=v${VERSION} ../jiyo/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../jiyo/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/jiyo-*-win-unsigned.tar.gz inputs/jiyo-win-unsigned.tar.gz
+    mv build/out/jiyo-*.zip build/out/jiyo-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit rupaya=v${VERSION} ../rupaya/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../rupaya/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/rupaya-*-osx-unsigned.tar.gz inputs/rupaya-osx-unsigned.tar.gz
-    mv build/out/rupaya-*.tar.gz build/out/rupaya-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit jiyo=v${VERSION} ../jiyo/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../jiyo/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/jiyo-*-osx-unsigned.tar.gz inputs/jiyo-osx-unsigned.tar.gz
+    mv build/out/jiyo-*.tar.gz build/out/jiyo-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit rupaya=v${VERSION} ../rupaya/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../rupaya/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/rupaya-*.tar.gz build/out/src/rupaya-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit jiyo=v${VERSION} ../jiyo/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../jiyo/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/jiyo-*.tar.gz build/out/src/jiyo-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`rupaya-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`rupaya-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`rupaya-${VERSION}-win[32|64]-setup-unsigned.exe`, `rupaya-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`rupaya-${VERSION}-osx-unsigned.dmg`, `rupaya-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`jiyo-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`jiyo-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`jiyo-${VERSION}-win[32|64]-setup-unsigned.exe`, `jiyo-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`jiyo-${VERSION}-osx-unsigned.dmg`, `jiyo-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import rupaya/contrib/gitian-keys/*.gpg
+    gpg --import jiyo/contrib/gitian-keys/*.gpg
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../rupaya/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../rupaya/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../rupaya/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../rupaya/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../jiyo/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../jiyo/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../jiyo/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../jiyo/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -161,22 +161,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer rupaya-osx-unsigned.tar.gz to osx for signing
-    tar xf rupaya-osx-unsigned.tar.gz
+    transfer jiyo-osx-unsigned.tar.gz to osx for signing
+    tar xf jiyo-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf rupaya-win-unsigned.tar.gz
+    tar xf jiyo-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/rupaya-detached-sigs
+    cd ~/jiyo-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -189,25 +189,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [rupaya-detached-sigs](https://github.com/eastcoastcrypto/rupaya-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [jiyo-detached-sigs](https://github.com/eastcoastcrypto/jiyo-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../rupaya/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../rupaya/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../rupaya/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/rupaya-osx-signed.dmg ../rupaya-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../jiyo/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../jiyo/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../jiyo/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/jiyo-osx-signed.dmg ../jiyo-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../rupaya/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../rupaya/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../rupaya/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/rupaya-*win64-setup.exe ../rupaya-${VERSION}-win64-setup.exe
-    mv build/out/rupaya-*win32-setup.exe ../rupaya-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../jiyo/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../jiyo/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../jiyo/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/jiyo-*win64-setup.exe ../jiyo-${VERSION}-win64-setup.exe
+    mv build/out/jiyo-*win32-setup.exe ../jiyo-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -229,23 +229,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-rupaya-${VERSION}-aarch64-linux-gnu.tar.gz
-rupaya-${VERSION}-arm-linux-gnueabihf.tar.gz
-rupaya-${VERSION}-i686-pc-linux-gnu.tar.gz
-rupaya-${VERSION}-x86_64-linux-gnu.tar.gz
-rupaya-${VERSION}-osx64.tar.gz
-rupaya-${VERSION}-osx.dmg
-rupaya-${VERSION}.tar.gz
-rupaya-${VERSION}-win32-setup.exe
-rupaya-${VERSION}-win32.zip
-rupaya-${VERSION}-win64-setup.exe
-rupaya-${VERSION}-win64.zip
+jiyo-${VERSION}-aarch64-linux-gnu.tar.gz
+jiyo-${VERSION}-arm-linux-gnueabihf.tar.gz
+jiyo-${VERSION}-i686-pc-linux-gnu.tar.gz
+jiyo-${VERSION}-x86_64-linux-gnu.tar.gz
+jiyo-${VERSION}-osx64.tar.gz
+jiyo-${VERSION}-osx.dmg
+jiyo-${VERSION}.tar.gz
+jiyo-${VERSION}-win32-setup.exe
+jiyo-${VERSION}-win32.zip
+jiyo-${VERSION}-win64-setup.exe
+jiyo-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the rupayacoin.com server*.
+space *do not upload these to the jiyocoin.com server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -261,10 +261,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/rupaya, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/jiyo, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Rupaya/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Jiyo/releases/new) with a link to the archived release notes.
 
   - Celebrate

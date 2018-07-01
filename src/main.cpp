@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Rupaya developers
+// Copyright (c) 2015-2017 The Rupaya developers
+// Copyright (c) 2017 The Jiyo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,7 +48,7 @@ using namespace std;
 using namespace libzerocoin;
 
 #if defined(NDEBUG)
-#error "Rupaya cannot be compiled without assertions."
+#error "Jiyo cannot be compiled without assertions."
 #endif
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
@@ -1623,7 +1623,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("AcceptToMemoryPool : zRupx spend tx %s already in block %d", tx.GetHash().GetHex(), nHeightTx),
+                return state.Invalid(error("AcceptToMemoryPool : ZJIYO spend tx %s already in block %d", tx.GetHash().GetHex(), nHeightTx),
                                      REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1633,12 +1633,12 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 CoinSpend spend = TxInToZerocoinSpend(txIn);
                 int nHeightTx = 0;
                 if (IsSerialInBlockchain(spend.getCoinSerialNumber(), nHeightTx))
-                    return state.Invalid(error("%s : zRupx spend with serial %s is already in block %d\n",
+                    return state.Invalid(error("%s : ZJIYO spend with serial %s is already in block %d\n",
                                                 __func__, spend.getCoinSerialNumber().GetHex(), nHeightTx));
 
                 //Is serial in the acceptable range
                 if (!spend.HasValidSerial(Params().Zerocoin_Params()))
-                    return state.Invalid(error("%s : zRupx spend with serial %s from tx %s is not in valid range\n",
+                    return state.Invalid(error("%s : ZJIYO spend with serial %s from tx %s is not in valid range\n",
                                                __func__, spend.getCoinSerialNumber().GetHex(), tx.GetHash().GetHex()));
             }
         } else {
@@ -2126,40 +2126,34 @@ int64_t GetBlockValue(int nHeight)
             return 250000 * COIN;
     }
 
-    if (nHeight == 0) {
-        nSubsidy = 7000000 * COIN;
-    } else if (nHeight < 26000 && nHeight > 0) {
-        nSubsidy = 100 * COIN;
-    } else if (nHeight <= 100000 && nHeight >= 26000) {
-        nSubsidy = 120 * COIN;
-    } else if (nHeight <= 200000 && nHeight > 100000) {
-        nSubsidy = 88 * COIN;
-    } else if (nHeight <= 300000 && nHeight > 200000) {
-        nSubsidy = 80 * COIN;
-    } else if (nHeight <= 400000 && nHeight > 300000) {
-        nSubsidy = 72 * COIN;
-    } else if (nHeight <= 500000 && nHeight > 400000) {
-        nSubsidy = 64 * COIN;
-    } else if (nHeight <= 600000 && nHeight > 500000) {
-        nSubsidy = 56 * COIN;
-    } else if (nHeight <= 700000 && nHeight > 600000) {
-        nSubsidy = 48 * COIN;
-    } else if (nHeight <= 800000 && nHeight > 700000) {
-        nSubsidy = 40 * COIN;
-    } else if (nHeight <= 900000 && nHeight > 800000) {
-        nSubsidy = 32 * COIN;
-    } else if (nHeight <= 1000000 && nHeight > 900000) {
-        nSubsidy = 24 * COIN;
-    } else if (nHeight <= 1100000 && nHeight > 1000000) {
-        nSubsidy = 16 * COIN;
-    } else if (nHeight <= 1200000 && nHeight > 1100000) {
-        nSubsidy = 8 * COIN;
-    } else if (nHeight > 1200000) {
-        nSubsidy = 0.001 * COIN;
-    } else {
-        nSubsidy = 0 * COIN;
-    }
-    return nSubsidy;
+if (nHeight == 1) {
+    nSubsidy = 8000000 * COIN;
+} else if (nHeight < 5000 && nHeight > 2) {
+    nSubsidy = 0.1 * COIN;
+} else if (nHeight <= 15000 && nHeight >= 5000) {
+    nSubsidy = 1 * COIN;
+} else if (nHeight <= 50000 && nHeight > 15000) {
+    nSubsidy = 30 * COIN;
+} else if (nHeight <= 100000 && nHeight > 50000) {
+    nSubsidy = 35 * COIN;
+} else if (nHeight <= 150000 && nHeight > 100000) {
+    nSubsidy = 40 * COIN;
+} else if (nHeight <= 200000 && nHeight > 150000) {
+    nSubsidy = 45 * COIN;
+} else if (nHeight <= 250000 && nHeight > 200000) {
+    nSubsidy = 50 * COIN;
+} else if (nHeight <= 300000 && nHeight > 250000) {
+    nSubsidy = 45 * COIN;
+} else if (nHeight <= 400000 && nHeight > 300000) {
+    nSubsidy = 40 * COIN;
+} else if (nHeight <= 500000 && nHeight > 400000) {
+    nSubsidy = 30 * COIN;
+} else if (nHeight > 500000) {
+    nSubsidy = 25 * COIN;
+} else {
+    nSubsidy = 0 * COIN;
+}
+return nSubsidy;
 }
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
@@ -2170,15 +2164,15 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         if (nHeight < 200)
             return 0;
     }
-
+	
     if (nHeight < 5 && nHeight > 0) {
         ret = blockValue  / 100 * 0;
-    } else if (nHeight <= 100000) {
-        // the initial split of 60% MN, 40% Stakers
-        ret = blockValue  / 100 * 60;
+    } else if (nHeight <= 15000) {
+        // the initial split of 70% MN, 30% Stakers
+        ret = blockValue  / 100 * 70;
     } else {
-        // increasing the MN reward to 75% as we are decreasing the block value to make room for governance
-        ret = blockValue  / 100 * 75;
+        // increasing the MN reward to 70% as we are decreasing the block value to make room for governance
+        ret = blockValue  / 100 * 60;
     }
 
     return ret;
@@ -2475,7 +2469,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from Rupaya
+         * note we only undo zerocoin databasing in the following statement, value to and from Jiyo
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2608,11 +2602,11 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("rupaya-scriptch");
+    RenameThread("jiyo-scriptch");
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZRUPXMinted()
+void RecalculateZJIYOMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_AccumulatorStartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -2644,14 +2638,14 @@ void RecalculateZRUPXMinted()
     pblocktree->Flush();
 }
 
-void RecalculateZRUPXSpent()
+void RecalculateZJIYOSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_AccumulatorStartHeight()];
     while (true) {
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
 
-        //Rewrite zRUPX supply
+        //Rewrite zJIYO supply
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
@@ -2660,13 +2654,13 @@ void RecalculateZRUPXSpent()
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-        //Add mints to zRUPX supply
+        //Add mints to zJIYO supply
         for (auto denom : libzerocoin::zerocoinDenomList) {
             long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
             pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
         }
 
-        //Remove spends from zRUPX supply
+        //Remove spends from zJIYO supply
         for (auto denom : listDenomsSpent)
             pindex->mapZerocoinSupply.at(denom)--;
 
@@ -2681,7 +2675,7 @@ void RecalculateZRUPXSpent()
     pblocktree->Flush();
 }
 
-bool RecalculateRUPXSupply(int nHeightStart)
+bool RecalculateJIYOSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -2868,7 +2862,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 if (zerocoinDB->ReadCoinSpend(spend.getCoinSerialNumber(), hashTxFromDB)) {
                     if(IsSerialInBlockchain(spend.getCoinSerialNumber(), nHeightTxSpend)) {
                         if(!fVerifyingBlocks || (fVerifyingBlocks && pindex->nHeight > nHeightTxSpend))
-                            return state.DoS(100, error("%s : zRupx with serial %s is already in the block %d\n",
+                            return state.DoS(100, error("%s : ZJIYO with serial %s is already in the block %d\n",
                                                         __func__, spend.getCoinSerialNumber().GetHex(), nHeightTxSpend));
                     }
                 }
@@ -2918,9 +2912,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     std::list<libzerocoin::CoinDenomination> listSpends = ZerocoinSpendListFromBlock(block);
 
     if (!fVerifyingBlocks && pindex->nHeight == Params().Zerocoin_StartHeight() + 1) {
-        RecalculateZRUPXMinted();
-        RecalculateZRUPXSpent();
-        RecalculateRUPXSupply(1);
+        RecalculateZJIYOMinted();
+        RecalculateZJIYOSpent();
+        RecalculateJIYOSupply(1);
     }
 
     // Initialize zerocoin supply to the supply from previous block
@@ -2959,7 +2953,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zRupxSpent: %s\n",
+//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s ZJIYOSpent: %s\n",
 //              FormatMoney(nValueOut), FormatMoney(nValueIn),
 //              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nAmountZerocoinSpent));
 
@@ -3121,7 +3115,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert RUPX to zRUPX
+    // If turned on AutoZeromint will automatically convert JIYO to zJIYO
     if (pwalletMain->isZeromintEnabled ())
         pwalletMain->AutoZeromint ();
 
@@ -3948,7 +3942,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 REJECT_INVALID, "block-version");
         }
 
-        // Rupaya
+        // Jiyo
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -3973,13 +3967,13 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         if (!CheckTransaction(tx, fZerocoinActive, chainActive.Height() + 1 >= Params().Zerocoin_StartHeight(), state))
             return error("CheckBlock() : CheckTransaction failed");
 
-        // double check that there are no double spent zRupx spends in this block
+        // double check that there are no double spent ZJIYO spends in this block
         if (tx.IsZerocoinSpend()) {
             for (const CTxIn txIn : tx.vin) {
                 if (txIn.scriptSig.IsZerocoinSpend()) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txIn);
                     if (count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zRupx serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of ZJIYO serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -4297,7 +4291,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         }
     }
     if (nMints || nSpends)
-        LogPrintf("%s : block contains %d zRupx mints and %d zRupx spends\n", __func__, nMints, nSpends);
+        LogPrintf("%s : block contains %d ZJIYO mints and %d ZJIYO spends\n", __func__, nMints, nSpends);
 
     // ppcoin: check proof-of-stake
     // Limited duplicity on stake: prevents block flood attack
@@ -5419,7 +5413,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             return false;
         }
 
-        // Rupaya: We use certain sporks during IBD, so check to see if they are
+        // Jiyo: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         if (!pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
             !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&

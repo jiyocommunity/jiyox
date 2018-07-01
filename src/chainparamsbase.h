@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between rupaya-cli and rupayad)
- * of a given instance of the Rupaya system.
+ * CBaseChainParams defines the base parameters (shared between jiyo-cli and jiyod)
+ * of a given instance of the Jiyo system.
  */
 class CBaseChainParams
 {

@@ -1,11 +1,11 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2015-2017 The Rupaya developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/rupaya-config.h"
+#include "config/jiyo-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -61,7 +61,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::RUPX);
+        settings.setValue("nDisplayUnit", BitcoinUnits::JIYO);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -79,10 +79,10 @@ void OptionsModel::Init()
         settings.setValue("nZeromintPercentage", 10);
     nZeromintPercentage = settings.value("nZeromintPercentage").toLongLong();
 
-    if (!settings.contains("nAnonymizeRupayaAmount"))
-        settings.setValue("nAnonymizeRupayaAmount", 1000);
+    if (!settings.contains("nAnonymizeJiyoAmount"))
+        settings.setValue("nAnonymizeJiyoAmount", 1000);
 
-    nAnonymizeRupayaAmount = settings.value("nAnonymizeRupayaAmount").toLongLong();
+    nAnonymizeJiyoAmount = settings.value("nAnonymizeJiyoAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -151,8 +151,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeRupayaAmount"))
-        SoftSetArg("-anonymizerupayaamount", settings.value("nAnonymizeRupayaAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeJiyoAmount"))
+        SoftSetArg("-anonymizejiyoamount", settings.value("nAnonymizeJiyoAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -163,7 +163,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in rupaya.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in jiyo.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -234,8 +234,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeRupayaAmount:
-            return QVariant(nAnonymizeRupayaAmount);
+        case AnonymizeJiyoAmount:
+            return QVariant(nAnonymizeJiyoAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -350,10 +350,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit preferredDenomChanged(nPreferredDenom);
             break;
 
-        case AnonymizeRupayaAmount:
-            nAnonymizeRupayaAmount = value.toInt();
-            settings.setValue("nAnonymizeRupayaAmount", nAnonymizeRupayaAmount);
-            emit anonymizeRupayaAmountChanged(nAnonymizeRupayaAmount);
+        case AnonymizeJiyoAmount:
+            nAnonymizeJiyoAmount = value.toInt();
+            settings.setValue("nAnonymizeJiyoAmount", nAnonymizeJiyoAmount);
+            emit anonymizeJiyoAmountChanged(nAnonymizeJiyoAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

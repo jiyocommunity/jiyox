@@ -36,8 +36,8 @@ BOOST_AUTO_TEST_CASE(util_SplitTorReplyLine)
         "VERSION Tor=\"0.2.9.8 (git-a0df013ea241b026)\"",
         "VERSION", "Tor=\"0.2.9.8 (git-a0df013ea241b026)\"");
     CheckSplitTorReplyLine(
-        "AUTHCHALLENGE SERVERHASH=aaaa SERVERNONCE=bbbb",
-        "AUTHCHALLENGE", "SERVERHASH=aaaa SERVERNONCE=bbbb");
+        "AUJIYOHALLENGE SERVERHASH=aaaa SERVERNONCE=bbbb",
+        "AUJIYOHALLENGE", "SERVERHASH=aaaa SERVERNONCE=bbbb");
 
     // Other valid inputs
     CheckSplitTorReplyLine("COMMAND", "COMMAND", "");

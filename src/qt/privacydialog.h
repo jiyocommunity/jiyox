@@ -46,7 +46,7 @@ public:
 
     void setModel(WalletModel* model);
     void showOutOfSyncWarning(bool fShow);
-    void setZRupxControlLabels(int64_t nAmount, int nQuantity);
+    void setZJiyoControlLabels(int64_t nAmount, int nQuantity);
 
 public slots:
     void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, 
@@ -76,7 +76,7 @@ private:
 
     int nDisplayUnit;
     bool updateLabel(const QString& address);
-    void sendzRUPX();
+    void sendzJIYO();
 
 private slots:
     void on_payTo_textChanged(const QString& address);
@@ -96,11 +96,11 @@ private slots:
 //    void coinControlClipboardLowOutput();
 //    void coinControlClipboardChange();
 
-    void on_pushButtonMintzRUPX_clicked();
+    void on_pushButtonMintzJIYO_clicked();
     void on_pushButtonMintReset_clicked();
     void on_pushButtonSpentReset_clicked();
-    void on_pushButtonSpendzRUPX_clicked();
-    void on_pushButtonZRupxControl_clicked();
+    void on_pushButtonSpendzJIYO_clicked();
+    void on_pushButtonZJiyoControl_clicked();
     void on_pasteButton_clicked();
     void updateDisplayUnit();
 };

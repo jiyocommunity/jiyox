@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="RUPXSupply">
+    <widget class="QLabel" name="JIYOSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="RUPXDemand">
+    <widget class="QLabel" name="JIYODemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -213,7 +213,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="RUPXDemand">
+    <widget class="QLabel" name="BtcDemand">
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyRUPX">
+    <widget class="QPushButton" name="BuyJIYO">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy RUPX</string>
+      <string>Buy JIYO</string>
      </property>
      <property name="icon">
-      <iconset resource="../rupaya.qrc">
+      <iconset resource="../jiyo.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>RUPX</string>
+      <string>JIYO</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>RUPX</string>
+      <string>JIYO</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputRUP">
+    <widget class="QLineEdit" name="UnitsInputJIYO">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellRUPBTN">
+    <widget class="QPushButton" name="SellJIYOBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell RUPX</string>
+      <string>Sell JIYO</string>
      </property>
      <property name="icon">
-      <iconset resource="../rupaya">
+      <iconset resource="../jiyo">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>RUPX Available:</string>
+         <string>JIYO Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="RUPXAvailableLabel">
+       <widget class="QLabel" name="JIYOAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelRUPX">
+       <widget class="QLabel" name="labelJIYO">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>RUPX</string>
+         <string>JIYO</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="RUPXBalanceLabel">
+    <widget class="QLabel" name="JIYOBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>RUPX Balance:</string>
+      <string>JIYO Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="RUPXAvailableLabel_2">
+    <widget class="QLabel" name="JIYOAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>RUPX Available:</string>
+      <string>JIYO Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>RUPX Pending:</string>
+      <string>JIYO Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="RUPPendingLabel">
+    <widget class="QLabel" name="JIYOPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex RUPX Deposit Address:</string>
+      <string>Bittrex JIYO Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate Rupaya Deposit Address</string>
+      <string>Generate Jiyo Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../rupaya.qrc">
+      <iconset resource="../jiyo.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertRupaya">
+     <widget class="QPushButton" name="btnConvertJiyo">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../rupaya.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../jiyo.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../rupaya.qrc">
+      <iconset resource="../jiyo.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../rupaya.qrc"/>
+  <include location="../jiyo.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -66,15 +66,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += rupayad
+  bin_PROGRAMS += jiyod
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += rupaya-cli rupaya-tx
+  bin_PROGRAMS += jiyo-cli jiyo-tx
 endif
 
 .PHONY: FORCE
-# rupaya core #
+# jiyo core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between rupayad and rupaya-qt
+# server: shared between jiyod and jiyo-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between rupayad and rupaya-qt, but only linked
+# wallet: shared between jiyod and jiyo-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -356,7 +356,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between rupayad, and rupaya-qt and non-server tools
+# common: shared between jiyod, and jiyo-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -416,7 +416,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between rupaya-cli and rupaya-qt
+# cli: shared between jiyo-cli and jiyo-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -426,7 +426,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-rupayad_LDADD = \
+jiyod_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -438,26 +438,26 @@ rupayad_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-rupayad_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+jiyod_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-rupayad_LDADD += libbitcoin_wallet.a
+jiyod_LDADD += libbitcoin_wallet.a
 endif
-rupayad_SOURCES = rupayad.cpp
+jiyod_SOURCES = jiyod.cpp
 #
 
 if TARGET_WINDOWS
-rupayad_SOURCES += rupayad-res.rc
+jiyod_SOURCES += jiyod-res.rc
 endif
 
-rupayad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-rupayad_CPPFLAGS = $(BITCOIN_INCLUDES)
-rupayad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+jiyod_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+jiyod_CPPFLAGS = $(BITCOIN_INCLUDES)
+jiyod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# rupaya-cli binary #
-rupaya_cli_LDADD = \
+# jiyo-cli binary #
+jiyo_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -465,14 +465,14 @@ rupaya_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-rupaya_cli_SOURCES = \
-  rupaya-cli.cpp
+jiyo_cli_SOURCES = \
+  jiyo-cli.cpp
 
-rupaya_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+jiyo_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# rupaya-tx binary #
-rupaya_tx_LDADD = \
+# jiyo-tx binary #
+jiyo_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -482,15 +482,15 @@ rupaya_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-rupaya_tx_SOURCES = rupaya-tx.cpp
-rupaya_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+jiyo_tx_SOURCES = jiyo-tx.cpp
+jiyo_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-rupaya_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+jiyo_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-rupaya_cli_SOURCES += rupaya-cli-res.rc
+jiyo_cli_SOURCES += jiyo-cli-res.rc
 endif
-rupaya_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+jiyo_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
