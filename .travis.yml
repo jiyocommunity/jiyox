@@ -65,7 +65,7 @@ deploy:
   file: out/**/zip/*
   skip_cleanup: true
   on:
-    repo: jiyo-project/jiyo
+    repo: jiyocoin/jiyox
   on:
     tags: true  
 deploy:
@@ -78,7 +78,7 @@ deploy:
   upload-dir: $TRAVIS_JOB_NUMBER
   acl: public_read
   on:
-    repo: jiyo-project/jiyo
+    repo: jiyocoin/jiyox
     cache_control: "max-age=21600"
     on:
       all_branches: true
