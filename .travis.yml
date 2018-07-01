@@ -60,8 +60,7 @@ before_deploy:
       - "./pre-deploy.sh"
 deploy:
   provider: releases
-  api_key:
-    secure: NGE60l7Lbs74ihAOqqiiD18vkVcYI0SDc3fIt3NBKfHiprvHTnldDNNrOIOuIDsg0LII65JJo1NKf7JJB86bfhqSrLyDnkeCmJRXjjSYjzKaAcLbRvixTSx9bVkHwOTTYXEhFpp9dZKjcqinPxnuO6FQf7bH0xiF6WtVQeK8oMjY3JcQZwOssbof5XSBbPaQLCFSWDyhJ7jdOqMprTd9Agq5RdxjRaaT9bYiykbqLbI6KgH5kNbkLcu734iYdWCZr+tfngUYc2teGwCkF7LYl6o2OPoW0byyitfDqjlBKIBCxPQwsFXL1QphyNiYWMlpU5yA9XqgSz5+WHhhPzO1GAOKTRiE+8Cpv7Pf55F1Z39N36howhhKS9c0mvAdxDrEkk5T2tLkdHOwrja7sgn374uXgI2u8ucb7W7iBfQO3tZ1tNBihj5+ks3Rv5nup8TgmJGcu4MadFqzGZH6uaj7cFRMZZWRVaKgQGdox0snk/Wmh0hcaTfIJv9Fg4ioEOhH/ecOOGdJIgLCL0ccmp/ynIRMF4Q3jGeAsch0MImTK6WkP9VJwOOSuM2daB/MVCJISyHa945BbP6fou9CneqH/X/3G5EbXes+8Itcdg/SabWIW7PGvTdWn7T1g5DYAn4MN1UgRiI+hQqL3oVRqmVyOu2a+Q97HxzF1lbhHfQCfus=
+  api_key: $GITHUB_OAUTH_TOKEN
   file: out/**/zip/*
   skip_cleanup: true
   on:
