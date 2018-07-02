@@ -57,7 +57,7 @@ The Jiyo repo's [root README](https://github.com/jiyo-project/jiyo/blob/master/R
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=506320.0) .
 * Join the [Jiyo Discord Group](https://discord.gg/VStxaRy).
-* Join the [Jiyo Telegram Group](https://t.me/HempCoinOfficial).
+* Join the [Jiyo Telegram Group](https://t.me/JiyoOfficial).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

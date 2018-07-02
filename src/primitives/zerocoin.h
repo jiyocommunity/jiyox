@@ -1,8 +1,8 @@
 // Copyright (c) 2017 The Rupaya developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef HEMPCOIN_ZEROCOIN_H
-#define HEMPCOIN_ZEROCOIN_H
+#ifndef JIYO_ZEROCOIN_H
+#define JIYO_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -189,4 +189,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //HEMPCOIN_ZEROCOIN_H
+#endif //JIYO_ZEROCOIN_H

@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "Jiyo"
-#define QAPP_ORG_DOMAIN "jiyo.org"
+#define QAPP_ORG_DOMAIN "jiyo.io"
 #define QAPP_APP_NAME_DEFAULT "Jiyo-Qt"
 #define QAPP_APP_NAME_TESTNET "Jiyo-Qt-testnet"
 

@@ -161,12 +161,12 @@ public:
         assert(hashGenesisBlock == uint256("0x00000757bdedd1828670d46b5b1dbe3b03c5123e524518ad11f31acaa71946b8"));
         assert(genesis.hashMerkleRoot == uint256("0xbd4303b5b39c799ec83105f6ae90e2a424987260b1b4004056b948cd583c1123"));
 		
-	vSeeds.push_back(CDNSSeedData("seeds.jiyo.org", "seeds.jiyo.org"));         // Primary DNS Seeder
-	vSeeds.push_back(CDNSSeedData("dns1.jiyo.org", "dns1.jiyo.org"));         // Single node address
-        vSeeds.push_back(CDNSSeedData("dns2.jiyo.org", "dns2.jiyo.org"));       // Single node address
-        vSeeds.push_back(CDNSSeedData("dns3.jiyo.org", "dns3.jiyo.org"));       // Single node address
-	vSeeds.push_back(CDNSSeedData("dns4.jiyo.org", "dns4.jiyo.org"));
-	vSeeds.push_back(CDNSSeedData("dns5.jiyo.org", "dns5.jiyo.org"));
+	vSeeds.push_back(CDNSSeedData("seeds.jiyo.io", "seeds.jiyo.io"));         // Primary DNS Seeder
+	vSeeds.push_back(CDNSSeedData("dns1.jiyo.io", "dns1.jiyo.io"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("dns2.jiyo.io", "dns2.jiyo.io"));       // Single node address
+        vSeeds.push_back(CDNSSeedData("dns3.jiyo.io", "dns3.jiyo.io"));       // Single node address
+	vSeeds.push_back(CDNSSeedData("dns4.jiyo.io", "dns4.jiyo.io"));
+	vSeeds.push_back(CDNSSeedData("dns5.jiyo.io", "dns5.jiyo.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 43);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 25);
@@ -190,7 +190,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04c43924c16a8e62bbf03be70654c17da536e9b065b5f5388a1bb8380ebbf2139792c3189a7ffcb801c1cdb28e7446083ccad7a9ce84bb213e3f332a5ba5647c43";
-        strObfuscationPoolDummyAddress = "TpwGAZBXNUQeryN9RxFu75Dc4Xiv4enXBQ";
+        strObfuscationPoolDummyAddress = "JpwGAZBXNUQeryN9RxFu75Dc4Xiv4enXBQ";
         nStartMasternodePayments = 1528921408; //Wednesday, 13 June 2018 21:23:24 GMT+01:00 DST
 
         /** Zerocoin */
@@ -226,7 +226,7 @@ public:
         pchMessageStart[2] = 0xd3;
         pchMessageStart[3] = 0x54;
         vAlertPubKey = ParseHex("041350192b43b7c956abf2b0ddf46e5ee693bba9e276e3c10b0a737eebd8419f5be32978117ad908032e1fd0a05e6b8f795c06e4e8e86c0ddb9238b04b7f1d7584");
-        nDefaultPort = 51434;
+        nDefaultPort = 10500;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -254,9 +254,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("test.jiyo.org", "test.jiyo.org"));         // Single node address
-        vSeeds.push_back(CDNSSeedData("testnet1.jiyo.org", "testnet1.jiyo.org"));       // Single node address
-        vSeeds.push_back(CDNSSeedData("testnet.jiyocoin.org", "testnet.jiyocoin.org"));       // Single node address
+        vSeeds.push_back(CDNSSeedData("test.jiyo.io", "test.jiyo.io"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("testnet1.jiyo.io", "testnet1.jiyo.io"));       // Single node address
+        vSeeds.push_back(CDNSSeedData("testnet.jiyo.io", "testnet.jiyo.io"));       // Single node address
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 100); // Testnet jiyo addresses start with 'x' or 'y'
@@ -321,7 +321,7 @@ public:
         genesis.nNonce = 732084;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 51436;
+        nDefaultPort = 10600;
         //assert(hashGenesisBlock == uint256("0x000008415bdca132b70cf161ecc548e5d0150fd6634a381ee2e99bb8bb77dbb3"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
@@ -352,7 +352,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 51478;
+        nDefaultPort = 10800;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
