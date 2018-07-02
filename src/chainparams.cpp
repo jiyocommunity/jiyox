@@ -118,7 +118,7 @@ public:
         nTargetSpacing = 1 * 60;  // Jiyo: 1 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 70000000 * COIN;
+        nMaxMoneyOut = 40000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
@@ -168,7 +168,7 @@ public:
 	vSeeds.push_back(CDNSSeedData("dns4.jiyo.io", "dns4.jiyo.io"));
 	vSeeds.push_back(CDNSSeedData("dns5.jiyo.io", "dns5.jiyo.io"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 43);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 21);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 25);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 240);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
@@ -190,7 +190,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04c43924c16a8e62bbf03be70654c17da536e9b065b5f5388a1bb8380ebbf2139792c3189a7ffcb801c1cdb28e7446083ccad7a9ce84bb213e3f332a5ba5647c43";
-        strObfuscationPoolDummyAddress = "JpwGAZBXNUQeryN9RxFu75Dc4Xiv4enXBQ";
+        strObfuscationPoolDummyAddress = "9pwGAZBXNUQeryN9RxFu75Dc4Xiv4enXBQ";
         nStartMasternodePayments = 1528921408; //Wednesday, 13 June 2018 21:23:24 GMT+01:00 DST
 
         /** Zerocoin */
