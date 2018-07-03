@@ -1494,7 +1494,8 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
           <item>
            <widget class="QListView" name="listTransactions">
             <property name="styleSheet">
-             <string notr="true">QListView { background: transparent; }</string>
+             <string notr="true">QListView { background: transparent; }
+font: 10pt &quot;Verdana&quot;;</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>

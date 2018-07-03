@@ -220,7 +220,7 @@ border-image: url(':/images/downArrow') 0 0 0 0 stretch stretch;
 }
 
 QComboBox QListView {
-background:#42464e;
+background:transparent;
 border:1px solid #333;
 padding-right:1px;
 padding-left:1px;
@@ -992,6 +992,8 @@ margin-left:0px;
 color:#000000;
 }
 
+QWidget .QFrame#frame .QLabel#labelImmature listTransactions
+
 QWidget .QFrame#frame .QLabel#labelWatchImmature { /* Watch-only Immature Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
@@ -1223,7 +1225,7 @@ QWidget .QFrame#frame_3 .QLabel#labelTotalz { /* Available total Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
-color:#00000;
+color:#000000;
 margin-left:0px;
 }
 
