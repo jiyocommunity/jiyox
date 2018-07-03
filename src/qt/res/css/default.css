@@ -898,7 +898,7 @@ QWidget .QFrame#frame .QLabel#label_5 { /* JIYO Balances Label */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
-color:#ff0000;
+color:#000000;
 font-weight:bold;
 font-size:14px;
 margin-right:5px;
@@ -925,7 +925,7 @@ margin-left:16px;
 QWidget .QFrame#frame .QLabel#labelBalanceText { /* Available Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#74008e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -951,7 +951,7 @@ margin-left:16px;
 QWidget .QFrame#frame .QLabel#labelPendingText { /* Pending Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -975,7 +975,7 @@ margin-left:16px;
 QWidget .QFrame#frame .QLabel#labelImmatureText { /* Immature Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -999,7 +999,7 @@ margin-left:16px;
 QWidget .QFrame#frame .QLabel#labelTotalText { /* Total Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -1024,7 +1024,7 @@ QWidget .QFrame#frame_4 .QLabel#label_5z_3 { /* Zerocoin Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
-color:#d7d7d9;
+color:#000000;
 font-weight:bold;
 font-size:14px;
 margin-right:5px;
@@ -1034,7 +1034,7 @@ padding-right:5px;
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceText { /* Available zJIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -1054,7 +1054,7 @@ margin-left:0px;
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmedText { /* Unconfirmed zJIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -1074,7 +1074,7 @@ margin-left:0px;
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceMatureText { /* Mature zJIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -1087,14 +1087,14 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceMature { /* Mature zJIYO Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
-color:#fff;
+color:#000000;
 margin-left:0px;
 }
 
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmatureText { /* Immature zJIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -1115,7 +1115,7 @@ QWidget .QFrame#frame_3 .QLabel#label_5z { /* Combined Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
-color:#d7d7d9;
+color:#000000;
 font-weight:bold;
 font-size:14px;
 margin-right:5px;
@@ -1125,7 +1125,7 @@ padding-right:5px;
 QWidget .QFrame#frame_3 .QLabel#labelBalanceTextz { /* Available JIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#00000;
 margin-right:5px;
 padding-right:5px;
@@ -1145,7 +1145,7 @@ margin-left:0px;
 QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zJIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -1165,7 +1165,7 @@ margin-left:0px;
 QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zJIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -1185,7 +1185,7 @@ margin-left:0px;
 QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zJIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
@@ -1205,7 +1205,7 @@ margin-left:0px;
 QWidget .QFrame#frame_3 .QLabel#labelTotalTextz { /* Available total Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 margin-right:5px;
 padding-right:5px;
