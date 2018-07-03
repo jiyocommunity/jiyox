@@ -1493,9 +1493,18 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
           </item>
           <item>
            <widget class="QListView" name="listTransactions">
+            <property name="font">
+             <font>
+              <family>Andale Mono</family>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
             <property name="styleSheet">
-             <string notr="true">QListView { background: transparent; }
-font: 10pt &quot;Verdana&quot;;</string>
+             <string notr="true">QListView { background: rgb(129, 129, 129); }
+font: 12pt &quot;Verdana&quot;;
+</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
