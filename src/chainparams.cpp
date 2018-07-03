@@ -54,12 +54,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-(0, uint256("0x001"));
+(0, uint256("0x00000757bdedd1828670d46b5b1dbe3b03c5123e524518ad11f31acaa71946b8"))
+(1404, uint256("0x508608cc7d58d4387a938d5c2a9d43252b7338bff3571d69dc78ac5601a1c65e"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-   1530375217, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+   1530619987, // * UNIX timestamp of last checkpoint block
+    2627,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -105,7 +106,7 @@ public:
         pchMessageStart[1] = 0x7F;
         pchMessageStart[2] = 0xB9;
         pchMessageStart[3] = 0xF5;
-        vAlertPubKey = ParseHex("04e4d80fcaf529731b77ed2287664326f1686a69d8542fa043af1650df819355c0e86d71cbbdfaa7b5a31101b799419a114f8664926893174d93b07822e86200e6");
+        vAlertPubKey = ParseHex("04c7426c31c15ad194e9abaab348aa5ce13213598a709a05529481329a4800a17e57e5cb270632d3539c8785b5c5e91e12af63651fe6a563c37fd79915f6526e56");
         nDefaultPort = 9999;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Jiyo starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -170,7 +171,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 21);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 25);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 240);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 136);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -189,7 +190,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04c43924c16a8e62bbf03be70654c17da536e9b065b5f5388a1bb8380ebbf2139792c3189a7ffcb801c1cdb28e7446083ccad7a9ce84bb213e3f332a5ba5647c43";
+        strSporkKey = "0433338c64069e3bba067e5ebbc1a144fb6e92c6f16ae8c547fa8a8a96151f0b67cf36daf5be6e02df368dcb9c6cb9924e8a2cf30a6299c2dbc410f8d6d63e6751";
         strObfuscationPoolDummyAddress = "9pwGAZBXNUQeryN9RxFu75Dc4Xiv4enXBQ";
         nStartMasternodePayments = 1528921408; //Wednesday, 13 June 2018 21:23:24 GMT+01:00 DST
 
@@ -221,11 +222,11 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x22;
-        pchMessageStart[1] = 0x62;
-        pchMessageStart[2] = 0xd3;
-        pchMessageStart[3] = 0x54;
-        vAlertPubKey = ParseHex("041350192b43b7c956abf2b0ddf46e5ee693bba9e276e3c10b0a737eebd8419f5be32978117ad908032e1fd0a05e6b8f795c06e4e8e86c0ddb9238b04b7f1d7584");
+        pchMessageStart[0] = 0x82;
+        pchMessageStart[1] = 0x6b;
+        pchMessageStart[2] = 0x48;
+        pchMessageStart[3] = 0xf8;
+        vAlertPubKey = ParseHex("0439444ca945c43c695a2145e68aa08969feb08c2a918241bcb6914d21ab9d4ae2224c186046142b9c8be906ba8de4e59d8f340ee931c1ec7a0e0ddc7b73122731");
         nDefaultPort = 10500;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -237,8 +238,8 @@ public:
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 43199500 * COIN;
-        nZerocoinStartHeight = 201576;
+        nMaxMoneyOut = 40000000 * COIN;
+        nZerocoinStartHeight = 5000;
         nZerocoinStartTime = 1501776000;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
@@ -246,11 +247,11 @@ public:
         nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
         
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1515616140;
-        genesis.nNonce = 79855;
+        genesis.nTime = 1530625101;
+        genesis.nNonce = 0x1e0ffff0;
 
 	    hashGenesisBlock = genesis.GetHash();
-        //assert(hashGenesisBlock == uint256("0x000007cff63ef602a51bf074e384b3516f0dd202f14d52f7c8c9b1af9423ab2e"));
+        assert(hashGenesisBlock == uint256("0x000002e103c0a22e171e638a5e7a1acb52077bc39f9420b7bbfd038f9add668e"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -259,9 +260,9 @@ public:
         vSeeds.push_back(CDNSSeedData("testnet.jiyo.io", "testnet.jiyo.io"));       // Single node address
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 100); // Testnet jiyo addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 15);  // Testnet jiyo script addresses start with '8' or '9'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 80); // Testnet jiyo addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 68);  // Testnet jiyo script addresses start with '8' or '9'
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 230);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         // Testnet jiyo BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
         // Testnet jiyo BIP32 prvkeys start with 'DRKP'
@@ -280,8 +281,8 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "0469497584dbdb6bfdcf39edcbd0dce5072805d40fd70b4e8055454a2f7372cfd5d30ec852427642dbfe0ad8e65652fdea5abe5b3fce0e488eb51ae50c8d46da33";
-        strObfuscationPoolDummyAddress = "xp87cG8UEQgzs1Bk67Yk884C7pnQfAeo7q";
+        strSporkKey = "044652196f61873da731a4c3f018312ad0ffd9f4f324a437a54202e5410341f244bbf3609d6e3d822a33c6a24a5be9698d5fb61cc5b23d14f8badf63c91f6fc408";
+        strObfuscationPoolDummyAddress = "Zp87cG8UEQgzs1Bk67Yk884C7pnQfAeo7q";
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
