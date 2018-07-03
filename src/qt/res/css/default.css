@@ -224,7 +224,7 @@ background:#42464e;
 border:1px solid #333;
 padding-right:1px;
 padding-left:1px;
-color:#fff;
+color:#000000;
 }
 
 QComboBox QAbstractItemView::item {
@@ -989,12 +989,14 @@ QWidget .QFrame#frame .QLabel#labelImmature { /* Immature Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 margin-left:0px;
+color:#000000;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchImmature { /* Watch-only Immature Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 margin-left:16px;
+color:#000000;
 }
 
 QWidget .QFrame#frame .QLabel#labelTotalText { /* Total Balance Label */
@@ -1129,7 +1131,7 @@ QWidget .QFrame#frame_3 .QLabel#labelBalanceTextz { /* Available JIYO Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:transparent;
-color:#00000;
+color:#000000;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
