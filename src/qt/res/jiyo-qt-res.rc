@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "JIYO"
-            VALUE "FileDescription",    "JIYO Core (OSS GUI client for JIYO)"
+            VALUE "CompanyName",        "Phore"
+            VALUE "FileDescription",    "Phore Core (OSS GUI client for Phore)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "jiyo-qt"
+            VALUE "InternalName",       "phore-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "jiyo-qt.exe"
-            VALUE "ProductName",        "JIYO Core"
+            VALUE "OriginalFilename",   "phore-qt.exe"
+            VALUE "ProductName",        "Phore Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
