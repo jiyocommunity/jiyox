@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("jiyo-core", ""
 QT_TRANSLATE_NOOP("jiyo-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("jiyo-core", "(9999 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("jiyo-core", "(6080 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("jiyo-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("jiyo-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("jiyo-core", "(must be 9999 for mainnet)"),
+QT_TRANSLATE_NOOP("jiyo-core", "(must be 6080 for mainnet)"),
 QT_TRANSLATE_NOOP("jiyo-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("jiyo-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("jiyo-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
@@ -259,7 +259,7 @@ QT_TRANSLATE_NOOP("jiyo-core", "Connect to a node to retrieve peer addresses, an
 QT_TRANSLATE_NOOP("jiyo-core", "Connection options:"),
 QT_TRANSLATE_NOOP("jiyo-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("jiyo-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("jiyo-core", "Copyright (C) 2015-%i The Rupaya Core Developers"),
+QT_TRANSLATE_NOOP("jiyo-core", "Copyright (C) 2015-%i The PIVX Core Developers"),
 QT_TRANSLATE_NOOP("jiyo-core", "Copyright (C) 2017-%i The Jiyo Core Developers"),
 QT_TRANSLATE_NOOP("jiyo-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("jiyo-core", "Could not parse -rpcbind value %s as network address"),

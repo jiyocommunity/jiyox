@@ -62,11 +62,11 @@
         <translation>Modtageradresse</translation>
     </message>
     <message>
-        <source>These are your Rupaya addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Jiyo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dine adresser til at sende betalinger med. Kontroller altid både beløb og modtageradresse før afsendelse.</translation>
     </message>
     <message>
-        <source>These are your Rupaya addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Jiyo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
@@ -176,16 +176,16 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>Rupaya will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
-        <translation>Rupaya vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
+        <source>Jiyo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your JIYOs from being stolen by malware infecting your computer.</source>
+        <translation>Jiyo vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR RUPX&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE RUPX&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR JIYO&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE JIYO&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 kryptografering</translation>
     </message>
     <message>
-        <source>Enter a Rupaya Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Indtast den Rupaya adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
+        <source>Enter a Jiyo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Indtast den Jiyo adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>The Rupaya address to sign the message with</source>
-        <translation>Den Rupaya adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The Jiyo address to sign the message with</source>
+        <translation>Den Jiyo adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Rupaya address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne Rupaya adresse.</translation>
+        <source>Sign the message to prove you own this Jiyo address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne Jiyo adresse.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Indtast den krypterede BIP 38 nøgle. Indtast kodeordet i den midterste boks. Klik på dekryptér for at generere den private nøgle. Når nøglen er dekrypteret vil klip på "importér adresse" overføre den private nøgle til tegnebogen.</translation>
     </message>
     <message>
-        <source>The Rupaya address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne Rupaya adresse</translation>
+        <source>The Jiyo address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne Jiyo adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Rupaya address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Rupaya adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified Jiyo address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Jiyo adresse.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya kerne</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo kerne</translation>
     </message>
     <message>
-        <source>Send coins to a Rupaya address</source>
-        <translation>Send mønter til en Rupaya adresse</translation>
+        <source>Send coins to a Jiyo address</source>
+        <translation>Send mønter til en Jiyo adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and rupaya: URIs)</source>
-        <translation>Anmod om betaling (genrerer QR kode og Rupaya URL)</translation>
+        <source>Request payments (generates QR codes and jiyo: URIs)</source>
+        <translation>Anmod om betaling (genrerer QR kode og Jiyo URL)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Rupaya Core</source>
-        <translation>&amp;Om Rupaya kerne</translation>
+        <source>&amp;About Jiyo Core</source>
+        <translation>&amp;Om Jiyo kerne</translation>
     </message>
     <message>
-        <source>Show information about Rupaya Core</source>
-        <translation>Vis information om Rupaya kerne</translation>
+        <source>Show information about Jiyo Core</source>
+        <translation>Vis information om Jiyo kerne</translation>
     </message>
     <message>
-        <source>Modify configuration options for Rupaya</source>
-        <translation>Ret konfigurationsindstillinger for Rupaya</translation>
+        <source>Modify configuration options for Jiyo</source>
+        <translation>Ret konfigurationsindstillinger for Jiyo</translation>
     </message>
     <message>
-        <source>Sign messages with your Rupaya addresses to prove you own them</source>
-        <translation>Underskriv beskeder med Deres Rupaya adresser for at bekræfte at De ejer dem.</translation>
+        <source>Sign messages with your Jiyo addresses to prove you own them</source>
+        <translation>Underskriv beskeder med Deres Jiyo adresser for at bekræfte at De ejer dem.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Rupaya addresses</source>
-        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne Rupaya adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Jiyo addresses</source>
+        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne Jiyo adresse</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a Rupaya: URI or payment request</source>
-        <translation>Åbn en Rupaya URl eller betalingsanmodning</translation>
+        <source>Open a Jiyo: URI or payment request</source>
+        <translation>Åbn en Jiyo URl eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the Rupaya Core help message to get a list with possible Rupaya command-line options</source>
-        <translation>Vis hjelpetekster fra Rupaya kernen for at få en liste med mulige Rupaya kommandolinie-startparametre</translation>
+        <source>Show the Jiyo Core help message to get a list with possible Jiyo command-line options</source>
+        <translation>Vis hjelpetekster fra Jiyo kernen for at få en liste med mulige Jiyo kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>Rupaya Core client</source>
-        <translation>Rupaya kerneklient</translation>
+        <source>Jiyo Core client</source>
+        <translation>Jiyo kerneklient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (rupaya.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (rupaya.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (jiyo.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (jiyo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1098,8 +1098,8 @@ Adresse: %4
         <translation>Ret afsenderadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Rupaya address.</source>
-        <translation>Den indtastede adresse %1 er ikke en gyldig Rupaya adresse</translation>
+        <source>The entered address "%1" is not a valid Jiyo address.</source>
+        <translation>Den indtastede adresse %1 er ikke en gyldig Jiyo adresse</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1144,16 +1144,16 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya kerne</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo kerne</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Rupaya Core</source>
-        <translation>om Rupaya kerne</translation>
+        <source>About Jiyo Core</source>
+        <translation>om Jiyo kerne</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1199,16 +1199,16 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Rupaya Core.</source>
-        <translation>Velkommen til Rupaya kerne</translation>
+        <source>Welcome to Jiyo Core.</source>
+        <translation>Velkommen til Jiyo kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Rupaya Core will store its data.</source>
-        <translation>Da det er første gang programmet startes, kan De vælge hvor Rupaya kernen skal lagre sine data</translation>
+        <source>As this is the first time the program is launched, you can choose where Jiyo Core will store its data.</source>
+        <translation>Da det er første gang programmet startes, kan De vælge hvor Jiyo kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Rupaya Core will download and store a copy of the Rupaya block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Rupaya kernen vil nu hente og gemme en kopi af Rupaya blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
+        <source>Jiyo Core will download and store a copy of the Jiyo block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Jiyo kernen vil nu hente og gemme en kopi af Jiyo blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1219,8 +1219,8 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya kerne</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo kerne</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1361,12 +1361,12 @@ Adresse: %4
         <translation>Indtast modtageradresse</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Rupaya addresses after it matures.
-To Add: enter percentage to give and Rupaya address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Jiyo addresses after it matures.
+To Add: enter percentage to give and Jiyo address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre Rupaya adressater når den er tilstrækkelig stor. 
-For at tilføje: Indtast procentsatsen De ønsker at overføre samt den Rupaya adresse som skal modtage via Multisendsystemet. 
+        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre Jiyo adressater når den er tilstrækkelig stor. 
+For at tilføje: Indtast procentsatsen De ønsker at overføre samt den Jiyo adresse som skal modtage via Multisendsystemet. 
 For at fjerne: Indtast adressen som skal slettes og klik på slet. 
 Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     </message>
@@ -1504,48 +1504,48 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Vælg tilsløringsniveau</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 RUPX</source>
-        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 RUPX</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 JIYO</source>
+        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 JIYO</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 RUPX</source>
-        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 RUPX</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 JIYO</source>
+        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 JIYO</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Brug 16 separate masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 RUPX to anonymize 10000 RUPX</source>
-        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 RUPX for at anonymiser 10000 RUPX</translation>
+        <source>This option is the quickest and will cost about ~0.025 JIYO to anonymize 10000 JIYO</source>
+        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 JIYO for at anonymiser 10000 JIYO</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 RUPX to anonymize 10000 RUPX</source>
-        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 RUPX for at anonymiser 10000 RUPX</translation>
+        <source>This option is moderately fast and will cost about 0.05 JIYO to anonymize 10000 JIYO</source>
+        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 JIYO for at anonymiser 10000 JIYO</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
     </message>
     <message>
-        <source>0.1 RUPX per 10000 RUPX you anonymize.</source>
-        <translation>0.1 pr 10000 RUPX for at tilsløre.</translation>
+        <source>0.1 JIYO per 10000 JIYO you anonymize.</source>
+        <translation>0.1 pr 10000 JIYO for at tilsløre.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Tilsløringskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Rupaya's configuration screen.</source>
-        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne Rupaya konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Jiyo's configuration screen.</source>
+        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne Jiyo konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Rupaya's configuration screen.</source>
-        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne Rupaya konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Jiyo's configuration screen.</source>
+        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne Jiyo konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Rupaya's configuration screen.</source>
-        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne Rupaya konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Jiyo's configuration screen.</source>
+        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne Jiyo konfigurationsbillede.</translation>
     </message>
 </context>
 <context>
@@ -1606,8 +1606,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Hvis De slår "brug af ubekræftede penge tilbage" vil penge tilbage &lt;br/&gt; ikke kunne benyttes før transaktionen er bekræftet mindst en gang. &lt;br/&gt;Dette har også indflydelse på opgørelsen af saldoen.</translation>
     </message>
     <message>
-        <source>Automatically open the Rupaya client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn Rupaya klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
+        <source>Automatically open the Jiyo client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn Jiyo klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1626,12 +1626,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically start Rupaya after logging in to the system.</source>
-        <translation>Start Rupaya automatisk, når der logges på systemet</translation>
+        <source>Automatically start Jiyo after logging in to the system.</source>
+        <translation>Start Jiyo automatisk, når der logges på systemet</translation>
     </message>
     <message>
-        <source>&amp;Start Rupaya on system login</source>
-        <translation>&amp;start Rupaya når der logges på systemet</translation>
+        <source>&amp;Start Jiyo on system login</source>
+        <translation>&amp;start Jiyo når der logges på systemet</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1658,22 +1658,22 @@ Kontroller adressen og prøv igen.</translation>
         <translation>&amp;netværk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Rupaya.</source>
-        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Rupaya klienten startes</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Jiyo.</source>
+        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Jiyo klienten startes</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/rupaya-project/rupaya-project-translations</source>
+https://www.transifex.com/jiyo-project/jiyo-project-translations</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/rupaya-project/rupaya-project-translations</translation>
+https://www.transifex.com/jiyo-project/jiyo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Rupaya network through a SOCKS5 proxy.</source>
-        <translation>Tilslut Rupaya netværket gennem en SOCKS5 PROXY</translation>
+        <source>Connect to the Jiyo network through a SOCKS5 proxy.</source>
+        <translation>Tilslut Jiyo netværket gennem en SOCKS5 PROXY</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1823,8 +1823,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Indskyder- eller masternodebelønning er stadig under behandling</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupaya network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Rupaya netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Jiyo network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Jiyo netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1890,11 +1890,11 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start rupaya: click-to-pay handler</source>
-        <translation>Kan ikke starte Rupaya "klik for at betale" systemet</translation>
+        <source>Cannot start jiyo: click-to-pay handler</source>
+        <translation>Kan ikke starte Jiyo "klik for at betale" systemet</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Rupaya address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Jiyo address or malformed URI parameters.</source>
         <translation>URl kan ikke fortolkes! Det kan skyldes en ugyldig adresse, eller forkerte URl parametre.</translation>
     </message>
     <message>
@@ -1976,8 +1976,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupaya network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Rupaya netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Jiyo network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Jiyo netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
     <message>
         <source>0</source>
@@ -2095,8 +2095,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>Enter a Rupaya address (e.g. %1)</source>
-        <translation>Indtast en Rupaya adresse (F.eks. %1)</translation>
+        <source>Enter a Jiyo address (e.g. %1)</source>
+        <translation>Indtast en Jiyo adresse (F.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2229,8 +2229,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Rupaya debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Rupaya debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
+        <source>Open the Jiyo debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn Jiyo debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2397,8 +2397,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Ud:</translation>
     </message>
     <message>
-        <source>Welcome to the Rupaya RPC console.</source>
-        <translation>Velkommen til Rupaya RPC konsollet</translation>
+        <source>Welcome to the Jiyo RPC console.</source>
+        <translation>Velkommen til Jiyo RPC konsollet</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2468,12 +2468,12 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Valgfri opmærkning som tilknyttes den nye modtageradresse.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Rupaya network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Rupaya netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Jiyo network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Jiyo netværket.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Rupaya network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Rupaya netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Jiyo network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Jiyo netværket.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2697,8 +2697,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 RUPX</source>
-        <translation>0 RUPX</translation>
+        <source>0 JIYO</source>
+        <translation>0 JIYO</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2741,15 +2741,15 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Bekræftelsestid</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uRUPs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uRUP i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uRUPs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uJIYOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uJIYOs in fee,&lt;br /&gt;while "at least" pays 1000 uJIYOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uJIYOs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uJIYO i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uJIYOs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uRUPs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uRUP i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uRUPs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uJIYOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uJIYOs in fee,&lt;br /&gt;while "total at least" pays 1000 uJIYOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uJIYOs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uJIYO i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uJIYOs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Rupaya transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Jiyo transactions than the network can process.</source>
         <translation>Betaling af mindste transaktionsgebyr vil være fint så længe der er færre transaktioner end der er plads til i blokkene. &lt;br /&gt; Men opmærksomheden henledes på, at det kan resultere i en transaktion der aldrig bliver bekræftet i det øjeblik der er større behov for transaktioner end netværket har plads til. </translation>
     </message>
     <message>
@@ -2853,8 +2853,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Anonyme saldi</translation>
     </message>
     <message>
-        <source>Warning: Invalid Rupaya address</source>
-        <translation>Advarsel! Ugyldig Rupaya adresse</translation>
+        <source>Warning: Invalid Jiyo address</source>
+        <translation>Advarsel! Ugyldig Jiyo adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2952,8 +2952,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
-        <source>The Rupaya address to send the payment to</source>
-        <translation>Rupaya adressen, som betalingen skal sendes til</translation>
+        <source>The Jiyo address to send the payment to</source>
+        <translation>Jiyo adressen, som betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2992,8 +2992,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the Rupaya: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Rupaya network.</source>
-        <translation>En besked, der var vedhæftet til Rupaya: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the Jiyo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Jiyo network.</source>
+        <translation>En besked, der var vedhæftet til Jiyo: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3019,8 +3019,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Rupaya Core is shutting down...</source>
-        <translation>Rupaya kernen lukker ned</translation>
+        <source>Jiyo Core is shutting down...</source>
+        <translation>Jiyo kernen lukker ned</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3042,8 +3042,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>De kan underskrive beskeder med Deres adresser or at bevise ejerskab. Vær forsigtig med at underskrive noget De er usikker på såsom forsøg op at narre Dem til at oplyse Deres identitet. Skriv kun under på noget De kan stå inde for, og som De er enig i. </translation>
     </message>
     <message>
-        <source>The Rupaya address to sign the message with</source>
-        <translation>Den Rupaya adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The Jiyo address to sign the message with</source>
+        <translation>Den Jiyo adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3074,16 +3074,16 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Rupaya address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne Rupaya adresse.</translation>
+        <source>Sign the message to prove you own this Jiyo address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne Jiyo adresse.</translation>
     </message>
     <message>
-        <source>The Rupaya address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne Rupaya adresse</translation>
+        <source>The Jiyo address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne Jiyo adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Rupaya address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Rupaya adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified Jiyo address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Jiyo adresse.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3169,8 +3169,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya kerne</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo kerne</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3185,8 +3185,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Rupaya Core developers</source>
-        <translation>Rupaya "core" udviklerne</translation>
+        <source>The Jiyo Core developers</source>
+        <translation>Jiyo "core" udviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3717,8 +3717,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 RUPX.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1RUP.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 JIYO.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1JIYO.</translation>
     </message>
 </context>
 <context>
@@ -3768,7 +3768,7 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
     </message>
     </context>
 <context>
-    <name>rupaya-core</name>
+    <name>jiyo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -3794,8 +3794,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Rupaya Core is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. Rupaya core kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. Jiyo Core is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. Jiyo core kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3814,8 +3814,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
     </message>
     <message>
-        <source>Disable all Rupaya specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle Rupaya funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all Jiyo specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle Jiyo funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3855,12 +3855,12 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in RUPX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in RUPX/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in JIYO/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in JIYO/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in RUPX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in RUPX/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in JIYO/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in JIYO/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3908,7 +3908,7 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
     </message>
     <message>
         <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere Rupaya</translation>
+        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere Jiyo</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -3955,44 +3955,44 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use rupayad, or the -server option to rupaya-qt, you must set an rpcpassword in the configuration file:
+        <source>To use jiyod, or the -server option to jiyo-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=rupayarpc
+rpcuser=jiyorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Rupaya Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Jiyo Alert" admin@foo.com
 </source>
-        <translation>For at bruge rupayad eller -server muligheden sammen med rupaya-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge jiyod eller -server muligheden sammen med jiyo-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=rupayarpc
+Rpcuser=jiyorpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!
 Hvis filen ikke eksisterer, opret den med sikkerhedsindstillingen - ejer kun læserettigheder tilladelsen.
 Det anbefales tillige at vælge alertnotify til for at blive orienteret om eventuelle problemer.
-For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrator.dk
+For eksempel: alertnotify=Echo %% | mail - s "Jiyo ALARM!" e-mail@administrator.dk
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Rupaya Core is probably already running.</source>
-        <translation>Det var ikke muligt at forbinde %s på denne computer. Rupaya kører sandsynligvis allerede.</translation>
+        <source>Unable to bind to %s on this computer. Jiyo Core is probably already running.</source>
+        <translation>Det var ikke muligt at forbinde %s på denne computer. Jiyo kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 RUPX.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 RUPX.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 JIYO.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 JIYO.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 RUPX.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 RUPX.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 JIYO.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 JIYO.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4007,8 +4007,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrato
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Rupaya Core will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Rupaya core ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Jiyo Core will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Jiyo core ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4039,8 +4039,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrato
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(9020 could be used only on mainnet)</source>
-        <translation>(9020 kunne kun bruges på hovednettet)</translation>
+        <source>(6080 could be used only on mainnet)</source>
+        <translation>(6080 kunne kun bruges på hovednettet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4051,8 +4051,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrato
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 9020 for mainnet)</source>
-        <translation>(skal være 9020 for hovednettet)</translation>
+        <source>(must be 6080 for mainnet)</source>
+        <translation>(skal være 6080 for hovednettet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4155,8 +4155,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrato
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Rupaya Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Rupaya Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Jiyo Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Jiyo Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4227,8 +4227,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrato
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Rupaya Core</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Rupaya core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Jiyo Core</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Jiyo core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4279,8 +4279,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrato
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in RUPX/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i RUPX/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in JIYO/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i JIYO/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4339,8 +4339,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrato
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Rupaya Core is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. Rupaya core lukker ned. </translation>
+        <source>Initialization sanity check failed. Jiyo Core is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. Jiyo core lukker ned. </translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4895,8 +4895,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Rupaya ALARM!" e-mail@administrato
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Rupaya Core to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart Rupaya core for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart Jiyo Core to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart Jiyo core for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -131,27 +131,14 @@
         </spacer>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBoxZeromintEnable">
-         <property name="toolTip">
-          <string>Enable automatic minting of Jiyo units to zPHR</string>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="text">
-          <string>Enable zPHR Automint</string>
-         </property>
-        </widget>
-       </item>
-       <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
           <widget class="QLabel" name="percentage_label">
            <property name="toolTip">
-            <string>Percentage of incoming JIYO which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</string>
+            <string>Percentage of incoming JIYO which get automatically converted to zJIYO via Zerocoin Protocol (min: 10%)</string>
            </property>
            <property name="text">
-            <string>Percentage of autominted zPHR</string>
+            <string>Percentage of autominted zJIYO</string>
            </property>
           </widget>
          </item>
@@ -184,7 +171,7 @@
             <string>Wait with automatic conversion to Zerocoin until enough JIYO for this denomination is available</string>
            </property>
            <property name="text">
-            <string>Preferred Automint zPHR Denomination</string>
+            <string>Preferred Automint zJIYO Denomination</string>
            </property>
           </widget>
          </item>
@@ -216,27 +203,6 @@
        <string>W&amp;allet</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Wallet">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2_Wallet">
-         <item>
-          <widget class="QLabel" name="labelStakeSplitThresholdText">
-           <property name="text">
-            <string>Stake split threshold:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="spinBoxStakeSplitThreshold">
-           <property name="minimum">
-            <number>1</number>
-           </property>
-           <property name="maximum">
-            <number>999999</number>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
        <item>
         <widget class="QGroupBox" name="groupBox">
          <property name="title">
@@ -507,7 +473,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Jiyo-project/Jiyo-project-translations</string>
+https://www.transifex.com/jiyo-project/jiyo-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
@@ -578,19 +544,6 @@ https://www.transifex.com/Jiyo-project/Jiyo-project-translations</string>
           <widget class="QValueComboBox" name="digits"/>
          </item>
         </layout>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="checkBoxHideZeroBalances">
-         <property name="toolTip">
-          <string>Hide empty balances</string>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="text">
-          <string>Hide empty balances</string>
-         </property>
-        </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3_Display">

@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your Rupaya addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите Rupaya адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your Jiyo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите Jiyo адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Rupaya addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите Rupaya адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your Jiyo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите Jiyo адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Rupaya will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
-        <translation>Rupaya сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Rupaya от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>Jiyo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your JIYOs from being stolen by malware infecting your computer.</source>
+        <translation>Jiyo сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Jiyo от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR RUPX&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ RUPX&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR JIYO&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ JIYO&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Шифриране</translation>
     </message>
     <message>
-        <source>Enter a Rupaya Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете Rupaya адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
+        <source>Enter a Jiyo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете Jiyo адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The Rupaya address to sign the message with</source>
-        <translation>Rupaya адреса, с който да подпишете съобщението</translation>
+        <source>The Jiyo address to sign the message with</source>
+        <translation>Jiyo адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Rupaya address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Rupaya адрес</translation>
+        <source>Sign the message to prove you own this Jiyo address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този Jiyo адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Въведете личният си BIP 38 ключ. Въведете тайната фраза в средното поле. Избери Дешифриращия Ключ за да изчислим личния ключ. След като ключа се дешифрира, за да добаите ключа към портфейла, кликнете "Импортирай адрес".</translation>
     </message>
     <message>
-        <source>The Rupaya address the message was signed with</source>
-        <translation>Rupaya адреса, който е подписано съобщението</translation>
+        <source>The Jiyo address the message was signed with</source>
+        <translation>Jiyo адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Rupaya address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Rupaya адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified Jiyo address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Jiyo адрес</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,24 +602,24 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Ядро</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a Rupaya address</source>
-        <translation>Изпратете монети до Rupaya адрес</translation>
+        <source>Send coins to a Jiyo address</source>
+        <translation>Изпратете монети до Jiyo адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and rupaya: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  Rupaya:URI)</translation>
+        <source>Request payments (generates QR codes and jiyo: URIs)</source>
+        <translation>Поискай плащане (генерира QR кодове и  Jiyo:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;Поверителност</translation>
     </message>
     <message>
-        <source>Privacy Action for zRUPX and Obfuscation</source>
-        <translation>Поверителни действия за zRUPX и Обфускация</translation>
+        <source>Privacy Action for zJIYO and Obfuscation</source>
+        <translation>Поверителни действия за zJIYO и Обфускация</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,24 +630,24 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About Rupaya Core</source>
-        <translation>&amp;Относно Rupaya Ядрото</translation>
+        <source>&amp;About Jiyo Core</source>
+        <translation>&amp;Относно Jiyo Ядрото</translation>
     </message>
     <message>
-        <source>Show information about Rupaya Core</source>
-        <translation>Информациза за Rupaya Ядрото</translation>
+        <source>Show information about Jiyo Core</source>
+        <translation>Информациза за Jiyo Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for Rupaya</source>
-        <translation>Промени Rupaya конфигурацията</translation>
+        <source>Modify configuration options for Jiyo</source>
+        <translation>Промени Jiyo конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your Rupaya addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте Rupaya адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your Jiyo addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте Jiyo адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Rupaya addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Rupaya адреси</translation>
+        <source>Verify messages to ensure they were signed with specified Jiyo addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Jiyo адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a Rupaya: URI or payment request</source>
-        <translation>Отвори Rupaya:URI платежно нареждане</translation>
+        <source>Open a Jiyo: URI or payment request</source>
+        <translation>Отвори Jiyo:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the Rupaya Core help message to get a list with possible Rupaya command-line options</source>
-        <translation>Разкрийте Помощ за Rupaya Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the Jiyo Core help message to get a list with possible Jiyo command-line options</source>
+        <translation>Разкрийте Помощ за Jiyo Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>Rupaya Core client</source>
-        <translation>Клиент Rupaya Ядро</translation>
+        <source>Jiyo Core client</source>
+        <translation>Клиент Jiyo Ядро</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Rupaya network</source>
-        <translation><numerusform>%n активни връзки към Rupaya мрежата</numerusform><numerusform>%n активни свръзки към Rupaya мрежата</numerusform></translation>
+        <source>%n active connection(s) to Jiyo network</source>
+        <translation><numerusform>%n активни връзки към Jiyo мрежата</numerusform><numerusform>%n активни свръзки към Jiyo мрежата</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -853,8 +853,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (rupaya.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (rupaya.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (jiyo.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (jiyo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1142,8 +1142,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Rupaya address.</source>
-        <translation>Зададения адрес "%1"не е валиден Rupaya адрес.</translation>
+        <source>The entered address "%1" is not a valid Jiyo address.</source>
+        <translation>Зададения адрес "%1"не е валиден Jiyo адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1188,16 +1188,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Ядро</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Rupaya Core</source>
-        <translation>Относно Rupaya Ядрото</translation>
+        <source>About Jiyo Core</source>
+        <translation>Относно Jiyo Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to Rupaya Core.</source>
-        <translation>Добре Дошли в Rupaya Ядрото</translation>
+        <source>Welcome to Jiyo Core.</source>
+        <translation>Добре Дошли в Jiyo Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Rupaya Core will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Rupaya Ядрото ще съхранява своите данни.</translation>
+        <source>As this is the first time the program is launched, you can choose where Jiyo Core will store its data.</source>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Jiyo Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>Rupaya Core will download and store a copy of the Rupaya block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Rupaya Ядрото ще изтегли и запише копие на целия Rupaya блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>Jiyo Core will download and store a copy of the Jiyo block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Jiyo Ядрото ще изтегли и запише копие на целия Jiyo блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1263,8 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Ядро</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1405,12 +1405,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Rupaya addresses after it matures.
-To Add: enter percentage to give and Rupaya address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Jiyo addresses after it matures.
+To Add: enter percentage to give and Jiyo address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Rupaya адреси.
-Да Добавите: въведете процент и задайте Rupaya адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Jiyo адреси.
+Да Добавите: въведете процент и задайте Jiyo адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1548,47 +1548,47 @@ Please check the address and try again.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 RUPX</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 RUPX</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 JIYO</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 JIYO</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 RUPX</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 RUPX</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 JIYO</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 JIYO</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 RUPX to anonymize 10000 RUPX</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 RUPX за да скриете 10000 RUPX</translation>
+        <source>This option is the quickest and will cost about ~0.025 JIYO to anonymize 10000 JIYO</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 JIYO за да скриете 10000 JIYO</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 RUPX to anonymize 10000 RUPX</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 RUPX за да скриете 10000 RUPX</translation>
+        <source>This option is moderately fast and will cost about 0.05 JIYO to anonymize 10000 JIYO</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 JIYO за да скриете 10000 JIYO</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на RUPX. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на JIYO. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 RUPX per 10000 RUPX you anonymize.</source>
-        <translation>0.1 RUPX за 10000 скрити RUPX</translation>
+        <source>0.1 JIYO per 10000 JIYO you anonymize.</source>
+        <translation>0.1 JIYO за 10000 скрити JIYO</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Rupaya's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Jiyo's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Rupaya's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Jiyo's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Rupaya's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Jiyo's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1650,8 +1650,8 @@ Please check the address and try again.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the Rupaya client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори Rupaya порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the Jiyo client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори Jiyo порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1670,12 @@ Please check the address and try again.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start Rupaya after logging in to the system.</source>
-        <translation>Стартирай Rupaya автоматично след влизане в системата.</translation>
+        <source>Automatically start Jiyo after logging in to the system.</source>
+        <translation>Стартирай Jiyo автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start Rupaya on system login</source>
-        <translation>&amp;Стартирай Rupaya заедно с операционната система</translation>
+        <source>&amp;Start Jiyo on system login</source>
+        <translation>&amp;Стартирай Jiyo заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1702,34 +1702,34 @@ Please check the address and try again.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Rupaya.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Jiyo.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/rupaya-project/rupaya-project-translations</source>
+https://www.transifex.com/jiyo-project/jiyo-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/rupaya-project/rupaya-project-translations</translation>
+https://www.transifex.com/jiyo-project/jiyo-project-translations</translation>
     </message>
     <message>
-        <source>Percentage of incoming RUPX which get automatically converted to zRUPX via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите RUPX, който автоматично да се конвертира в zRUPX посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming JIYO which get automatically converted to zJIYO via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите JIYO, който автоматично да се конвертира в zJIYO посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRUPX</source>
-        <translation>Процент автоматично сечени zRUPX</translation>
+        <source>Percentage of autominted zJIYO</source>
+        <translation>Процент автоматично сечени zJIYO</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough RUPX for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zRUPX докато не се съберат достатъчно RUPX за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough JIYO for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zJIYO докато не се съберат достатъчно JIYO за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zRUPX Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zRUPX</translation>
+        <source>Preferred Automint zJIYO Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zJIYO</translation>
     </message>
     <message>
-        <source>Connect to the Rupaya network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с Rupaya мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the Jiyo network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с Jiyo мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1859,8 +1859,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>От</translation>
     </message>
     <message>
-        <source>RUPX Balances</source>
-        <translation>RUPX Баланс</translation>
+        <source>JIYO Balances</source>
+        <translation>JIYO Баланс</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1887,8 +1887,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Възнаграждение от стейкване или мастърноуд, които все още не са узрели.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupaya network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Rupaya мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Jiyo network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Jiyo мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1927,12 +1927,12 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Комбиниран общ баланс (само озрелите монети)</translation>
     </message>
     <message>
-        <source>RUPX:</source>
-        <translation>RUPX:</translation>
+        <source>JIYO:</source>
+        <translation>JIYO:</translation>
     </message>
     <message>
-        <source>zRUPX:</source>
-        <translation>zRUPX:</translation>
+        <source>zJIYO:</source>
+        <translation>zJIYO:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1974,12 +1974,12 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start rupaya: click-to-pay handler</source>
-        <translation>Провал при стартирането на rupaya: click-to-pay обработвател</translation>
+        <source>Cannot start jiyo: click-to-pay handler</source>
+        <translation>Провал при стартирането на jiyo: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Rupaya address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден Rupaya адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Jiyo address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден Jiyo адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2060,24 +2060,24 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>RUPX which were anonymized via Zerocin Protocol</source>
-        <translation>RUPX скрити посредством Зерокойн протокола</translation>
+        <source>JIYO which were anonymized via Zerocin Protocol</source>
+        <translation>JIYO скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
-        <source>Zerocoin RUPX (zRUPX)</source>
-        <translation>Zerocoin RUPX (zRUPX)</translation>
+        <source>Zerocoin JIYO (zJIYO)</source>
+        <translation>Zerocoin JIYO (zJIYO)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Rupaya network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Rupaya мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Jiyo network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Jiyo мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Въведете колко RUPX  да се конвертират в zRUPX</translation>
+        <translation>Въведете колко JIYO  да се конвертират в zJIYO</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2088,16 +2088,16 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>0</translation>
     </message>
     <message>
-        <source>zRUPX</source>
-        <translation>zRUPX</translation>
+        <source>zJIYO</source>
+        <translation>zJIYO</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 RUPX</source>
-        <translation>0.000 000 00 RUPX</translation>
+        <source>0.000 000 00 JIYO</source>
+        <translation>0.000 000 00 JIYO</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2133,11 +2133,11 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
     </message>
     <message>
         <source>zPhr Control</source>
-        <translation>zRUPX Контрол</translation>
+        <translation>zJIYO Контрол</translation>
     </message>
     <message>
         <source>zPhr Selected:</source>
-        <translation>Избрани zRUPX:</translation>
+        <translation>Избрани zJIYO:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2156,8 +2156,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>0 zRUPX</source>
-        <translation>0 zRUPX</translation>
+        <source>0 zJIYO</source>
+        <translation>0 zJIYO</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2176,7 +2176,7 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Rupaya address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The Jiyo address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2209,7 +2209,7 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zRUPX от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zJIYO от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2376,8 +2376,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Копирай сумата</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Rupaya network yet.</source>
-        <translation>Zerocoin функцията все още не е активирана в Rupaya мрежата.</translation>
+        <source>Zerocoin functionality is not enabled on the Jiyo network yet.</source>
+        <translation>Zerocoin функцията все още не е активирана в Jiyo мрежата.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2396,8 +2396,8 @@ https://www.transifex.com/rupaya-project/rupaya-project-translations</translatio
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zRUPX in </source>
-        <translation>zRUPX в</translation>
+        <source> zJIYO in </source>
+        <translation>zJIYO в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2430,8 +2430,8 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid Rupaya Address</source>
-        <translation>Невалиден Rupaya адрес</translation>
+        <source>Invalid Jiyo Address</source>
+        <translation>Невалиден Jiyo адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2475,7 +2475,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Spend #: </source>
-        <translation>zRUPX Похарчени #:</translation>
+        <translation>zJIYO Похарчени #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2499,7 +2499,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Mint</source>
-        <translation>Сечене на zRUPX</translation>
+        <translation>Сечене на zJIYO</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -2521,8 +2521,8 @@ Please be patient...</source>
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Rupaya address (e.g. %1)</source>
-        <translation>Задайте Rupaya адрес (например %1)</translation>
+        <source>Enter a Jiyo address (e.g. %1)</source>
+        <translation>Задайте Jiyo адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2659,8 +2659,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the Rupaya debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори Rupaya дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the Jiyo debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори Jiyo дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2827,8 +2827,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the Rupaya RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на Rupaya.</translation>
+        <source>Welcome to the Jiyo RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на Jiyo.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2898,12 +2898,12 @@ Please be patient...</source>
         <translation>Незадължителен етикет, който да асоциираме с адреса за получаване.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Rupaya network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Rupaya мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Jiyo network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Jiyo мрежата.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Rupaya network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Rupaya мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Jiyo network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Jiyo мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3127,8 +3127,8 @@ Please be patient...</source>
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 RUPX</source>
-        <translation>0 RUPX</translation>
+        <source>0 JIYO</source>
+        <translation>0 JIYO</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3179,15 +3179,15 @@ Please be patient...</source>
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uRUP и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uRUP входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uRUP. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uJIYOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uJIYOs in fee,&lt;br /&gt;while "at least" pays 1000 uJIYOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uJIYO и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uJIYO входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uJIYO. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uRUP и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uRUP входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uRUP. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uJIYOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uJIYOs in fee,&lt;br /&gt;while "total at least" pays 1000 uJIYOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uJIYO и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uJIYO входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uJIYO. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Rupaya transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Jiyo transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3235,8 +3235,8 @@ Please be patient...</source>
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized RUPX</source>
-        <translation>Анонимизиран RUPX</translation>
+        <source>Anonymized JIYO</source>
+        <translation>Анонимизиран JIYO</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3295,8 +3295,8 @@ Please be patient...</source>
         <translation>анонимни средства</translation>
     </message>
     <message>
-        <source>Warning: Invalid Rupaya address</source>
-        <translation>Предупреждение: Невалиден RUPX адрес</translation>
+        <source>Warning: Invalid Jiyo address</source>
+        <translation>Предупреждение: Невалиден JIYO адрес</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3402,8 +3402,8 @@ Please be patient...</source>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Rupaya address to send the payment to</source>
-        <translation>Rupaya адреса - получател на плащането</translation>
+        <source>The Jiyo address to send the payment to</source>
+        <translation>Jiyo адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3442,8 +3442,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Rupaya: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Rupaya network.</source>
-        <translation>Съобщение, което е било прикачено към Rupaya:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Rupaya мрежата.</translation>
+        <source>A message that was attached to the Jiyo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Jiyo network.</source>
+        <translation>Съобщение, което е било прикачено към Jiyo:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Jiyo мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3469,8 +3469,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Rupaya Core is shutting down...</source>
-        <translation>Изключване на Rupaya Ядрото...</translation>
+        <source>Jiyo Core is shutting down...</source>
+        <translation>Изключване на Jiyo Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3492,8 +3492,8 @@ Please be patient...</source>
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The Rupaya address to sign the message with</source>
-        <translation>Rupaya адреса, с който да подпишете съобщението</translation>
+        <source>The Jiyo address to sign the message with</source>
+        <translation>Jiyo адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3524,16 +3524,16 @@ Please be patient...</source>
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Rupaya address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Rupaya адрес</translation>
+        <source>Sign the message to prove you own this Jiyo address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този Jiyo адрес</translation>
     </message>
     <message>
-        <source>The Rupaya address the message was signed with</source>
-        <translation>Rupaya адреса, който е подписано съобщението</translation>
+        <source>The Jiyo address the message was signed with</source>
+        <translation>Jiyo адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Rupaya address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Rupaya адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified Jiyo address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Jiyo адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3619,8 +3619,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Ядро</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3635,8 +3635,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The Rupaya Core developers</source>
-        <translation>Rupaya Core разработчици</translation>
+        <source>The Jiyo Core developers</source>
+        <translation>Jiyo Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3956,23 +3956,23 @@ Please be patient...</source>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>Конвертиран RUPX във zRUPX</translation>
+        <translation>Конвертиран JIYO във zJIYO</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>Похарчени zRUPX</translation>
+        <translation>Похарчени zJIYO</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Получен RUPX от zRUPX</translation>
+        <translation>Получен JIYO от zJIYO</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Исечено ресто като zRUPX от похарчените zRUPX</translation>
+        <translation>Исечено ресто като zJIYO от похарчените zJIYO</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
-        <translation>Конвертирани zRUPX в RUPX</translation>
+        <translation>Конвертирани zJIYO в JIYO</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3980,7 +3980,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Accumulator</source>
-        <translation>zRUPX Акумулатор</translation>
+        <translation>zJIYO Акумулатор</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4087,7 +4087,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Получен RUPX от zRUPX</translation>
+        <translation>Получен JIYO от zJIYO</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4099,7 +4099,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Харчене на Zerocoin, Ресто в zRUPX</translation>
+        <translation>Харчене на Zerocoin, Ресто в zJIYO</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4215,8 +4215,8 @@ Please be patient...</source>
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 RUPX.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 RUPX.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 JIYO.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 JIYO.</translation>
     </message>
 </context>
 <context>
@@ -4262,7 +4262,7 @@ Please be patient...</source>
     <name>ZPhrControlDialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>Изберете zRUPX за Изпращане</translation>
+        <translation>Изберете zJIYO за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4274,7 +4274,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr</source>
-        <translation>zRUPX</translation>
+        <translation>zJIYO</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4286,7 +4286,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>rupaya-core</name>
+    <name>jiyo-core</name>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
         <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>
@@ -4304,8 +4304,8 @@ Please be patient...</source>
         <translation>Изтрий всички преводи от портфейла и възстанови само тези части от блокчейна - сканира при стартиране.</translation>
     </message>
     <message>
-        <source>Disable all Rupaya specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи всякаква Rupaya функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
+        <source>Disable all Jiyo specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи всякаква Jiyo функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4344,12 +4344,12 @@ Please be patient...</source>
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in RUPX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в RUPX/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in JIYO/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в JIYO/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in RUPX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в RUPX/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in JIYO/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в JIYO/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

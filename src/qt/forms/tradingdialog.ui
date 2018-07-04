@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="PHRSupply">
+    <widget class="QLabel" name="JIYOSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="PHRDemand">
+    <widget class="QLabel" name="JIYODemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyPHR">
+    <widget class="QPushButton" name="BuyJIYO">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -445,7 +445,7 @@
       <string>Buy JIYO</string>
      </property>
      <property name="icon">
-          <iconset resource="../jiyo.qrc">
+      <iconset resource="../jiyo.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1707,7 +1707,7 @@
       <string>JIYO</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputPHR">
+    <widget class="QLineEdit" name="UnitsInputJIYO">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellPHRBTN">
+    <widget class="QPushButton" name="SellJIYOBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1754,7 +1754,7 @@
       <string>Sell JIYO</string>
      </property>
      <property name="icon">
-          <iconset resource="../jiyo.qrc">
+      <iconset resource="../jiyo">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1782,7 +1782,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="PHRAvailableLabel">
+       <widget class="QLabel" name="JIYOAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelPHR">
+       <widget class="QLabel" name="labelJIYO">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="PHRBalanceLabel">
+    <widget class="QLabel" name="JIYOBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="PHRAvailableLabel_2">
+    <widget class="QLabel" name="JIYOAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2835,7 +2835,7 @@
       <string>JIYO Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="PHRPendingLabel">
+    <widget class="QLabel" name="JIYOPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2944,7 +2944,7 @@
       <string>Generate Jiyo Deposit Address</string>
      </property>
      <property name="icon">
-          <iconset resource="../jiyo.qrc">
+      <iconset resource="../jiyo.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertPhore">
+     <widget class="QPushButton" name="btnConvertJiyo">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../jiyo">:/icons/transaction_1</pixmap>
+       <pixmap resource="../jiyo.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-          <iconset resource="../jiyo.qrc">
+      <iconset resource="../jiyo.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../jiyo"/>
+  <include location="../jiyo.qrc"/>
  </resources>
  <connections/>
 </ui>

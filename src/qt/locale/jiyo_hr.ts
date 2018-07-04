@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The Rupaya address the message was signed with</source>
-        <translation>Rupaya adresa s kojom je potpisana poruka</translation>
+        <source>The Jiyo address the message was signed with</source>
+        <translation>Jiyo adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Core</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Core</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>Rupaya Core client</source>
-        <translation>Rupaya Core klijent</translation>
+        <source>Jiyo Core client</source>
+        <translation>Jiyo Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Core</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Core</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -535,8 +535,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 RUPX</source>
-        <translation>0 RUPX</translation>
+        <source>0 JIYO</source>
+        <translation>0 JIYO</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Rupaya Core is shutting down...</source>
-        <translation>Rupaya Core se gasi...</translation>
+        <source>Jiyo Core is shutting down...</source>
+        <translation>Jiyo Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -620,8 +620,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The Rupaya address the message was signed with</source>
-        <translation>Rupaya adresa s kojom je potpisana poruka</translation>
+        <source>The Jiyo address the message was signed with</source>
+        <translation>Jiyo adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Core</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -790,7 +790,7 @@
     </message>
     </context>
 <context>
-    <name>rupaya-core</name>
+    <name>jiyo-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

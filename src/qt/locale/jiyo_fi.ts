@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your Rupaya addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun Rupaya osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Jiyo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Jiyo osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your Rupaya addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun Rupaya osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Jiyo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Jiyo osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Rupaya will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
-        <translation>Rupaya sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella RUPien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Jiyo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your JIYOs from being stolen by malware infecting your computer.</source>
+        <translation>Jiyo sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella JIYOien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR RUPX&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki RUPisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR JIYO&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki JIYOisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Rupaya Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Rupaya osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a Jiyo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä Jiyo osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The Rupaya address to sign the message with</source>
-        <translation>Rupaya osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Jiyo address to sign the message with</source>
+        <translation>Jiyo osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Rupaya address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Rupaya osoitteen</translation>
+        <source>Sign the message to prove you own this Jiyo address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Jiyo osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The Rupaya address the message was signed with</source>
-        <translation>Rupaya osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Jiyo address the message was signed with</source>
+        <translation>Jiyo osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Rupaya address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Rupaya osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Jiyo address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Jiyo osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Ydin</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a Rupaya address</source>
-        <translation>Lähetä kolikkoja Rupaya osoitteeseen</translation>
+        <source>Send coins to a Jiyo address</source>
+        <translation>Lähetä kolikkoja Jiyo osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and rupaya: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja rupaya: URIja)</translation>
+        <source>Request payments (generates QR codes and jiyo: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja jiyo: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Rupaya Core</source>
-        <translation>Rupaya Core &amp;ytimestä</translation>
+        <source>&amp;About Jiyo Core</source>
+        <translation>Jiyo Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Rupaya Core</source>
-        <translation>Näytä tietoja Rupaya Ytimestä</translation>
+        <source>Show information about Jiyo Core</source>
+        <translation>Näytä tietoja Jiyo Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for Rupaya</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja Rupaya:lle</translation>
+        <source>Modify configuration options for Jiyo</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja Jiyo:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your Rupaya addresses to prove you own them</source>
+        <source>Sign messages with your Jiyo addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Rupaya addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Rupaya osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified Jiyo addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Jiyo osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a Rupaya: URI or payment request</source>
-        <translation>Avaa Rupaya: URI tai pyydä maksua</translation>
+        <source>Open a Jiyo: URI or payment request</source>
+        <translation>Avaa Jiyo: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Rupaya Core help message to get a list with possible Rupaya command-line options</source>
-        <translation>Näytä Rupaya Ydin apuviesti saadaksesi lista mahdollisista Rupaya komentolinja komennoista.</translation>
+        <source>Show the Jiyo Core help message to get a list with possible Jiyo command-line options</source>
+        <translation>Näytä Jiyo Ydin apuviesti saadaksesi lista mahdollisista Jiyo komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Rupaya Core client</source>
-        <translation>Rupaya Ydin asiakasohjelma</translation>
+        <source>Jiyo Core client</source>
+        <translation>Jiyo Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Ydin</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Rupaya Core.</source>
-        <translation>Tervetuloa Rupaya Ytimeen.</translation>
+        <source>Welcome to Jiyo Core.</source>
+        <translation>Tervetuloa Jiyo Ytimeen.</translation>
     </message>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Ydin</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 RUPX</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Rupaya</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 JIYO</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Jiyo</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 RUPX</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Rupaya</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 JIYO</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Jiyo</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 RUPX to anonymize 10000 RUPX</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 RUP anonymoidaksesi 10000 Rupaya</translation>
+        <source>This option is the quickest and will cost about ~0.025 JIYO to anonymize 10000 JIYO</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 JIYO anonymoidaksesi 10000 Jiyo</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 RUPX to anonymize 10000 RUPX</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Rupaya anonymoidaksesi 10000 Rupaya</translation>
+        <source>This option is moderately fast and will cost about 0.05 JIYO to anonymize 10000 JIYO</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Jiyo anonymoidaksesi 10000 Jiyo</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 RUPX per 10000 RUPX you anonymize.</source>
-        <translation>0.1 per 10000 Rupaya, jotka anonymisoit.</translation>
+        <source>0.1 JIYO per 10000 JIYO you anonymize.</source>
+        <translation>0.1 per 10000 Jiyo, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start Rupaya after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä Rupaya kun kirjaudut sisään.</translation>
+        <source>Automatically start Jiyo after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Jiyo kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start Rupaya on system login</source>
-        <translation>&amp;Aloita Rupaya järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Jiyo on system login</source>
+        <translation>&amp;Aloita Jiyo järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Rupaya.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Jiyo.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the Rupaya network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Rupaya verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Jiyo network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Jiyo verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the Rupaya debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Rupaya debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the Jiyo debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Jiyo debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the Rupaya RPC console.</source>
-        <translation>Tervetuloa Rupaya RPC konsoliin.</translation>
+        <source>Welcome to the Jiyo RPC console.</source>
+        <translation>Tervetuloa Jiyo RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Rupaya network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Rupaya verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Jiyo network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Jiyo verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Rupaya network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Rupaya  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Jiyo network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Jiyo  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1898,8 +1898,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 RUPX</source>
-        <translation>0 RUPX</translation>
+        <source>0 JIYO</source>
+        <translation>0 JIYO</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid Rupaya address</source>
-        <translation>Varoitus: Virheellinen Rupaya osoite</translation>
+        <source>Warning: Invalid Jiyo address</source>
+        <translation>Varoitus: Virheellinen Jiyo osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The Rupaya address to send the payment to</source>
-        <translation>Rupaya osoite johon maksu lähetetään</translation>
+        <source>The Jiyo address to send the payment to</source>
+        <translation>Jiyo osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Rupaya Core is shutting down...</source>
-        <translation>Rupaya core sammuu...</translation>
+        <source>Jiyo Core is shutting down...</source>
+        <translation>Jiyo core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The Rupaya address to sign the message with</source>
-        <translation>Rupaya osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Jiyo address to sign the message with</source>
+        <translation>Jiyo osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Rupaya address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Rupaya osoitteen</translation>
+        <source>Sign the message to prove you own this Jiyo address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Jiyo osoitteen</translation>
     </message>
     <message>
-        <source>The Rupaya address the message was signed with</source>
-        <translation>Rupaya osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Jiyo address the message was signed with</source>
+        <translation>Jiyo osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Rupaya address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Rupaya osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Jiyo address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Jiyo osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Rupaya Core</source>
-        <translation>Rupaya Ydin</translation>
+        <source>Jiyo Core</source>
+        <translation>Jiyo Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Rupaya Core developers</source>
-        <translation>Rupaya core kehittäjät</translation>
+        <source>The Jiyo Core developers</source>
+        <translation>Jiyo core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2541,7 +2541,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>rupaya-core</name>
+    <name>jiyo-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Rupaya Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Rupaya Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Jiyo Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Jiyo Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
