@@ -992,7 +992,6 @@ margin-left:0px;
 color:#000000;
 }
 
-QWidget .QFrame#frame .QLabel#labelImmature listTransactions
 
 QWidget .QFrame#frame .QLabel#labelWatchImmature { /* Watch-only Immature Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
@@ -1261,11 +1260,12 @@ margin-top:83px;
 margin-left:16px;
 margin-right:5px;
 min-height:16px;
+color: #000000;
 }
 
 QWidget .QFrame#frame_2 QListView { /* Transaction List */
-font-weight:normal;
-font-size:12px;
+font-weight:bold;
+font-size:13px;
 max-width:369px;
 margin-top:12px;
 margin-left:0px;
