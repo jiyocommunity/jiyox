@@ -1493,20 +1493,8 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
           </item>
           <item>
            <widget class="QListView" name="listTransactions">
-            <property name="font">
-             <font>
-              <family>Andale Mono</family>
-             </font>
-            </property>
-            <property name="autoFillBackground">
-             <bool>false</bool>
-            </property>
             <property name="styleSheet">
-             <string notr="true">background:transparent;
-border:1px solid #333;
-padding-right:1px;
-padding-left:1px;
-color:#000000;</string>
+             <string notr="true">QListView { background: transparent; }</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
@@ -1519,9 +1507,6 @@ color:#000000;</string>
             </property>
             <property name="selectionMode">
              <enum>QAbstractItemView::NoSelection</enum>
-            </property>
-            <property name="uniformItemSizes">
-             <bool>false</bool>
             </property>
            </widget>
           </item>
