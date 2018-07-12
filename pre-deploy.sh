@@ -3,6 +3,8 @@
 OUTDIR=$TRAVIS_BUILD_DIR/out/$TRAVIS_PULL_REQUEST/$TRAVIS_JOB_NUMBER-$HOST
 mkdir -p $OUTDIR/bin
 
+echo $TRAVIS_BUILD_DIR
+
 ARCHIVE_CMD="zip"
 
 if [[ $HOST = "i686-w64-mingw32" ]]; then
@@ -22,13 +24,18 @@ elif [[ $HOST = "x86_64-apple-darwin11" ]]; then
     ARCHIVE_NAME="osx-x64.zip"
 fi
 
-cp $TRAVIS_BUILD_DIR/src/qt/jiyo-qt $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/qt/jiyo-qt.exe $OUTDIR/bin/ || echo "no QT Wallet"
-cp $TRAVIS_BUILD_DIR/src/jiyod $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/jiyod.exe $OUTDIR/bin/
-cp $TRAVIS_BUILD_DIR/src/jiyo-cli $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/jiyo-cli.exe $OUTDIR/bin/
-strip "$OUTDIR/bin"/* || echo "nothing to strip"
-ls -lah $OUTDIR/bin
+if [[ $HOST = "x86_64-apple-darwin11" ]]; then
+    find $TRAVIS_BUILD_DIR -type f | grep -i Jiyo-Core.dmg$ | xargs -i cp {} $OUTDIR/bin
+else
+    cp $TRAVIS_BUILD_DIR/src/qt/jiyo-qt $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/qt/jiyo-qt.exe $OUTDIR/bin/ || echo "no QT Wallet"
+    cp $TRAVIS_BUILD_DIR/src/jiyod $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/jiyod.exe $OUTDIR/bin/
+    cp $TRAVIS_BUILD_DIR/src/jiyo-cli $OUTDIR/bin/ || cp $TRAVIS_BUILD_DIR/src/jiyo-cli.exe $OUTDIR/bin/
+    strip "$OUTDIR/bin"/* || echo "nothing to strip"
+    ls -lah $OUTDIR/bin
+fi
 
 cd $OUTDIR/bin
+ls -ah
 ARCHIVE_CMD="$ARCHIVE_CMD $ARCHIVE_NAME *"
 eval $ARCHIVE_CMD
 
