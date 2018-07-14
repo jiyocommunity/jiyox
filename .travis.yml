@@ -26,13 +26,13 @@ env:
   - HOST=aarch64-linux-gnu PACKAGES="g++-aarch64-linux-gnu" OPT="NO_QT=1" CONF="--without-gui"
   - HOST=i686-w64-mingw32 PACKAGES="g++-mingw-w64-i686 mingw-w64-i686-dev"
   - HOST=x86_64-w64-mingw32 PACKAGES="g++-mingw-w64-x86-64 mingw-w64-x86-64-dev"
-  - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python-dev" BITCOIN_CONFIG="--enable-reduce-exports" OSX_SDK=10.11 GOAL="deploy"
+  - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools pythin python-dev python-setuptools" BITCOIN_CONFIG="--enable-reduce-exports" OSX_SDK=10.11 GOAL="deploy"
 before_install:
 - export PATH=$(echo $PATH | tr ':' "\n" | sed '/\/opt\/python/d' | tr "\n" ":" |
   sed "s|::|:|g")
 install:
-- echo -e '<?xml version="1.0" encoding="UTF-8"?>\n<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\n  <mirrors>\n    <mirror>\n      <id>mvnsearch-unavailable</id>\n      <name>mvnsearch-unavailable</name>\n      <mirrorOf>mvnsearch</mirrorOf>\n      <url>http://repo1.maven.org/maven2</url>\n    </mirror>\n  </mirrors>\n  <profiles>\n    <profile>\n      <id>no-mvnsearch</id>\n      <repositories>\n        <repository>\n          <id>mvnsearch</id>\n          <url>http://www.mvnsearch.org/maven2</url>\n          <releases>\n            <enabled>true</enabled>\n          </releases>\n          <snapshots>\n            <enabled>true</enabled>\n          </snapshots>\n        </repository>\n      </repositories>\n    </profile>\n  </profiles>\n  <activeProfiles>\n    <activeProfile>no-mvnsearch</activeProfile>\n  </activeProfiles>\n</settings>' > $HOME/.m2/settings.xml
-- cat $HOME/.m2/settings.xml
+#- echo -e '<?xml version="1.0" encoding="UTF-8"?>\n<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\n  <mirrors>\n    <mirror>\n      <id>mvnsearch-unavailable</id>\n      <name>mvnsearch-unavailable</name>\n      <mirrorOf>mvnsearch</mirrorOf>\n      <url>http://repo1.maven.org/maven2</url>\n    </mirror>\n  </mirrors>\n  <profiles>\n    <profile>\n      <id>no-mvnsearch</id>\n      <repositories>\n        <repository>\n          <id>mvnsearch</id>\n          <url>http://www.mvnsearch.org/maven2</url>\n          <releases>\n            <enabled>true</enabled>\n          </releases>\n          <snapshots>\n            <enabled>true</enabled>\n          </snapshots>\n        </repository>\n      </repositories>\n    </profile>\n  </profiles>\n  <activeProfiles>\n    <activeProfile>no-mvnsearch</activeProfile>\n  </activeProfiles>\n</settings>' > $HOME/.m2/settings.xml
+#- cat $HOME/.m2/settings.xml
 - sudo add-apt-repository -y ppa:bitcoin/bitcoin
 - sudo apt-get update
 - travis_retry sudo apt-get install --no-install-recommends --no-upgrade -qq $BASE_PACKAGES
