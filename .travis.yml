@@ -26,7 +26,7 @@ env:
   - HOST=aarch64-linux-gnu PACKAGES="g++-aarch64-linux-gnu" OPT="NO_QT=1" CONF="--without-gui"
   - HOST=i686-w64-mingw32 PACKAGES="g++-mingw-w64-i686 mingw-w64-i686-dev"
   - HOST=x86_64-w64-mingw32 PACKAGES="g++-mingw-w64-x86-64 mingw-w64-x86-64-dev"
-  - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools pythin python-dev python-setuptools" BITCOIN_CONFIG="--enable-reduce-exports" OSX_SDK=10.11 GOAL="deploy"
+  - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python python-dev python-setuptools" BITCOIN_CONFIG="--enable-reduce-exports" OSX_SDK=10.11 GOAL="deploy"
 before_install:
 - export PATH=$(echo $PATH | tr ':' "\n" | sed '/\/opt\/python/d' | tr "\n" ":" |
   sed "s|::|:|g")
