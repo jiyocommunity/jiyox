@@ -113,7 +113,7 @@ public:
         nDefaultPort = 9999;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Jiyo starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
-        nMaxReorganizationDepth = 10;
+        nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
