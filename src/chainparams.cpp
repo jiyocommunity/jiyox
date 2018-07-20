@@ -57,13 +57,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 (0, uint256("0x00000757bdedd1828670d46b5b1dbe3b03c5123e524518ad11f31acaa71946b8"))
 (1404, uint256("0x00000508608cc7d58d4387a938d5c2a9d43252b7338bff3571d69dc78ac5601a1c65e"))
 (3010, uint256("0x000009acbf519616c27ac3f779ab7ebf2036494acc400e25fd949c043c2e7a8b3823a"))
-(12980, uint256("0x000001dddb36037e8333a61215efab9156475be8dce64b5954e3a9a48ebb162799a9c"))
-(23435, uint256("0x000009380f259208b4aefa8b682c39a3c03de6ae616b3c098198b611a135cd24b30bd"));
+(12980, uint256("0x000001dddb36037e8333a61215efab9156475be8dce64b5954e3a9a48ebb162799a9c"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1531959074, // * UNIX timestamp of last checkpoint block
-    47947,    // * total number of transactions between genesis and last checkpoint
+    1531324199, // * UNIX timestamp of last checkpoint block
+    26412,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -120,7 +119,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Jiyo: 1 day
         nTargetSpacing = 1 * 60;  // Jiyo: 1 minute
-        nMaturity = 100;
+        nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 40000000 * COIN;
 
@@ -223,7 +222,7 @@ class CTestNetParams : public CMainParams
 public:
     CTestNetParams()
     {
-        networkID = CBaseChainParams::TESTNET; // To Do
+        networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
         pchMessageStart[0] = 0x82;
         pchMessageStart[1] = 0x6b;
@@ -254,7 +253,7 @@ public:
         genesis.nNonce = 0x1e0ffff0;
 
 	    hashGenesisBlock = genesis.GetHash();
-        //assert(hashGenesisBlock == uint256("0x000002e103c0a22e171e638a5e7a1acb52077bc39f9420b7bbfd038f9add668e")); // To Do
+        //assert(hashGenesisBlock == uint256("0x000002e103c0a22e171e638a5e7a1acb52077bc39f9420b7bbfd038f9add668e"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
