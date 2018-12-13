@@ -1,3 +1,1 @@
-#Jiyo
-
-#2.1 Release
+#Jiyo community coin
